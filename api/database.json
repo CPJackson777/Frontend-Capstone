@@ -1,0 +1,85 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "firstName": "Charles",
+        "lastName": "Jackson",
+        "email": "charlesjackson@email.com",
+        "password": "charleshair"
+      },
+      {
+        "id": 2,
+        "firstName": "Joseph",
+        "lastName": "Walker",
+        "email": "josephwalker@email.com",
+        "password": "josephhair"
+      },
+      {
+        "id": 3,
+        "firstName": "Ryan",
+        "lastName": "Crowley",
+        "email": "ryancrowley@email.com",
+        "password": "ryanhair"
+      }
+    ],
+    "hairtypes": [
+      {
+        "id": 1,
+        "title": "Straight",
+        "description": "Type 1 hair that is described as fine, very thin and soft with a noticeable shine.",
+        "img": "img.svg"
+      },
+      {
+        "id": 2,
+        "title": "Wavy",
+        "description": "Type 2 hair that has waves that tend to adhere to the shape of your head.",
+        "img": "img.svg"
+      },
+      {
+        "id": 3,
+        "title": "Curly",
+        "description": "Type 3 hair that ranges from bouncy ringlets (spiral like curls of hair) to tight corkscrews (spiral-shaped corkscrew curls).",
+        "img": "img.svg"
+      },
+      {
+        "id": 4,
+        "title": "Coily",
+        "description": "Type 4 hair that appears to be coarse, however, it is really very fine, with several thin hair strands densely packed together in tight coils.",
+        "img": "img.svg"
+      }
+    ],
+    "hairstyles": [
+        {
+          "id": 1,
+          "userId": 1,
+          "styleName": "Pony Tail",
+          "instructions": "Make a pony tail.",
+          "img": "img.svg",
+          "videoUrl": "youtube.com"
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "styleName": "Mohawk Puffs",
+            "instructions": "Make some mohawk puffs.",
+            "img": "img.svg",
+            "videoUrl": "youtube.com"
+        },
+        {
+            "id": 3,
+            "userId": 3,
+            "styleName": "Pigtails",
+            "instructions": "Make some pig tails.",
+            "img": "img.svg",
+            "videoUrl": "youtube.com"
+        },
+        {
+            "id": 4,
+            "userId": 4,
+            "styleName": "French Braids",
+            "instructions": "Braid em like you in France baby!",
+            "img": "img.svg",
+            "videoUrl": "youtube.com"
+        }
+      ]
+  }

@@ -8,7 +8,7 @@ class HairGuyd extends Component {
   render() {
     return (
 
-          <ApplicationViews {...this.props}/>
+          <ApplicationViews />
     );
   }
 }

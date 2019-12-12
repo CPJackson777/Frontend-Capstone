@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Route, Redirect } from "react-router-dom"
+//***********Welcome Page************
 import Welcome from './welcome/Welcome';
 import SignUp from "./auth/SignUp";
 import Login from "./auth/Login";
-// import Login from "./auth/Login";
 
 
 class ApplicationViews extends Component {

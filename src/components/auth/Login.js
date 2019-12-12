@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ApiManager from '../modules/ApiManager';
+import ApiManager from '../../modules/ApiManager'
 
 class Login extends Component {
 
@@ -36,6 +36,7 @@ class Login extends Component {
 
 
     render() {
+        console.log(this.state)
         return (
             <div className="login-card">
                 <form onSubmit={this.handleLogin}>

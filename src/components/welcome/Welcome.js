@@ -12,7 +12,7 @@ class Welcome extends Component {
                             <Link to={`/signup`}><button>Sign Up</button></Link>
                         </div>
                         <div id="loginButton">
-                            <button>Login</button>
+                        <Link to={`/login`}><button>Login</button></Link>
                         </div>
 
             </div>

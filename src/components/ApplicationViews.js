@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Redirect } from "react-router-dom"
 import Welcome from './welcome/Welcome';
 import SignUp from "./auth/SignUp";
+import Login from "./auth/Login";
 // import Login from "./auth/Login";
 
 
@@ -19,6 +20,12 @@ class ApplicationViews extends Component {
                 {/* Remove null and return the component which will handle user registration */}
                 <Route exact path="/signup" render={props => {
                     return <SignUp setUser={this.props.setUser} {...props} />
+                }}
+                />
+
+                {/* Remove null and return the component which will handle user registration */}
+                <Route exact path="/login" render={props => {
+                    return <Login setUser={this.props.setUser} {...props} />
                 }}
                 />
 

@@ -22,43 +22,44 @@ class Login extends Component {
 
 
     handleLoginSubmit = e => {
-    e.preventDefault()
-    ApiManager.checkUser(this.state.email, this.state.password)
-    .then(results=>{
-        if(results.length>0) {
-            this.props.setUser(results)
-            this.props.history.push("/");
-        } else {
-            alert("Incorrect username, email, or password")
-        } 
-    })
-}
+        e.preventDefault()
+        ApiManager.checkUser(this.state.email, this.state.password)
+            .then(results => {
+                if (results.length > 0) {
+                    this.props.setUser(results)
+                    this.props.history.push("/hairtypes");
+                } else {
+                    alert("Hey man...looks like you need to correct your email or password")
+                }
+            })
+    }
 
-
+    //*************************************************************************************************** 
+    //  JSX for Login Form and instructs computer to take user to hairtypes when submit button is clicked
+    //***************************************************************************************************
     render() {
-        console.log(this.state)
         return (
-            <div className="login-card">
-                <form onSubmit={this.handleLogin}>
+            <div className="login-form">
+                <form>
                     <div>
                         <fieldset>
-                            <h3>Please sign in</h3>
+                            <h3>User Login</h3>
                             <div className="formgrid">
-                                <label htmlFor="inputEmail">Email: </label>
+                                <label htmlFor="emailInput">Email: </label>
                                 <input onChange={this.handleFieldChange} type="email"
                                     id="email"
                                     placeholder="Email address"
                                     required="" autoFocus="" />
 
-                                <label htmlFor="inputPassword">Password: </label>
-                                <input className="inputs" onChange={this.handleFieldChange} type="password"
+                                <label htmlFor="passwordInput">Password: </label>
+                                <input onChange={this.handleFieldChange} type="password"
                                     id="password"
                                     placeholder="Password"
                                     required="" />
                             </div>
-                            <button type="submit">
-                                Sign in
-                    </button>
+                            <button onClick={this.handleLoginSubmit} type="submit">
+                                Enter
+                            </button>
                         </fieldset>
                     </div>
                 </form>

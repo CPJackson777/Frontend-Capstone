@@ -4,6 +4,8 @@ import { Route, Redirect } from "react-router-dom"
 import Welcome from './welcome/Welcome';
 import SignUp from "./auth/SignUp";
 import Login from "./auth/Login";
+//***********Home****************
+import HairTypeHome from "./hairtypes/hairTypeHome";
 
 
 class ApplicationViews extends Component {
@@ -23,12 +25,16 @@ class ApplicationViews extends Component {
                 }}
                 />
 
-                {/* Remove null and return the component which will handle user registration */}
+                {/* Remove null and return the component which will handle user login */}
                 <Route exact path="/login" render={props => {
                     return <Login setUser={this.props.setUser} {...props} />
                 }}
                 />
 
+                <Route exact path="/hairtypes" render={(props) => {
+                    return <HairTypeHome {...props} />
+                }}
+                />
             </>
         );
 

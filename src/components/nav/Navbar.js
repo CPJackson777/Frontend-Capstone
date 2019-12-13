@@ -6,7 +6,7 @@ class NavBar extends Component {
 
   handleLogout = () => {
     this.props.clearUser();
-    this.props.history.push('/');
+    // this.props.history.push('/');
 }
 
   render(){
@@ -19,17 +19,17 @@ class NavBar extends Component {
         <nav>
           <ul className="container">
             {
-            (this.props.user)
+            (this.props.isLoggedIn)
             ? 
             <>
             <li><Link className="nav-link" to="/hairtypes">Hair Types</Link></li>
             <li><Link className="nav-link" to="/straight">Straight Hair</Link></li>
             <li><Link className="nav-link" to="/wavy">Wavy Hair</Link></li>
             <li><Link className="nav-link" to="/curly">Curly Hair</Link></li>
-            <li><Link className="nav-link" to="/coily">Coily Hair</Link></li>
+            <li><Link className="nav-link" to="/curly">Coily</Link></li>
             <li><span className="nav-link" onClick={this.handleLogout}>Logout</span></li>
             </>
-            : this.props.history.push('/')
+            : null
             }
           </ul>
         </nav>

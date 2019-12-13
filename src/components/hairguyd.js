@@ -9,7 +9,7 @@ class HairGuyd extends Component {
   // user doesn't exist by default
   //******************************
   state = {
-    user: false
+    isLoggedIn: false
   }
 
   //*******************************************************************************
@@ -26,20 +26,20 @@ class HairGuyd extends Component {
       JSON.stringify(signupObj)
     )
     this.setState({
-      user: this.isAuthenticated()
+      isLoggedIn: this.isAuthenticated()
     });
   }
 
   clearUser = () => {
     localStorage.clear()
 
-    this.setState({user: this.isAuthenticated() });
+    this.setState({isLoggedIn: this.isAuthenticated() });
 }
 
 
 componentDidMount(){
   this.setState({
-    user: this.isAuthenticated()
+    isLoggedIn: this.isAuthenticated()
   })
 }
 
@@ -47,8 +47,8 @@ componentDidMount(){
   render() {
     return (
       <>
-      <NavBar user={this.state.user} clearUser={this.clearUser} />
-      <ApplicationViews user={this.state.user}
+      <NavBar isLoggedIn={this.state.isLoggedIn} clearUser={this.clearUser} />
+      <ApplicationViews isLoggedIn={this.state.isLoggedIn}
                         setUser={this.setUser} />
       </>
     );

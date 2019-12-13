@@ -32,7 +32,10 @@ class ApplicationViews extends Component {
                 />
 
                 <Route exact path="/hairtypes" render={(props) => {
-                    return <HairTypeHome {...props} />
+                    return this.props.isLoggedIn ?
+                    <HairTypeHome {...props} />
+                    :
+                    <Redirect to="/" />
                 }}
                 />
             </>

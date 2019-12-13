@@ -26,7 +26,7 @@ class NavBar extends Component {
             <li><Link className="nav-link" to="/straight">Straight Hair</Link></li>
             <li><Link className="nav-link" to="/wavy">Wavy Hair</Link></li>
             <li><Link className="nav-link" to="/curly">Curly Hair</Link></li>
-            <li><Link className="nav-link" to="/curly">Coily</Link></li>
+            <li><Link className="nav-link" to="/coily">Coily</Link></li>
             <li><span className="nav-link" onClick={this.handleLogout}>Logout</span></li>
             </>
             : null

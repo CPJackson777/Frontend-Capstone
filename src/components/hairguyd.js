@@ -12,10 +12,10 @@ class HairGuyd extends Component {
     user: false
   }
 
-  //*****************************************************************************************
-  // Authentication: isSignedUp checks if credentials are in local storage returns true/false
-  //*****************************************************************************************
-  isSignedup = () => localStorage.getItem("credentials") !== null
+  //*******************************************************************************
+  // isAuthenticated checks if credentials are in local storage returns true/false
+  //*******************************************************************************
+  isAuthenticated = () => localStorage.getItem("credentials") !== null
 
   //**********************************************
   // Set Store Email and password in local storage
@@ -26,16 +26,30 @@ class HairGuyd extends Component {
       JSON.stringify(signupObj)
     )
     this.setState({
-      user: this.isSignedup()
+      user: this.isAuthenticated()
     });
   }
+
+  clearUser = () => {
+    localStorage.clear()
+
+    this.setState({user: this.isAuthenticated() });
+}
+
+
+componentDidMount(){
+  this.setState({
+    user: this.isAuthenticated()
+  })
+}
 
 
   render() {
     return (
       <>
       <NavBar user={this.state.user} clearUser={this.clearUser} />
-      <ApplicationViews setUser={this.setUser} />
+      <ApplicationViews user={this.state.user}
+                        setUser={this.setUser} />
       </>
     );
   }

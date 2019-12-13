@@ -4,24 +4,38 @@ import './NavBar.css'
 
 class NavBar extends Component {
 
+  handleLogout = () => {
+    this.props.clearUser();
+    this.props.history.push('/');
+}
+
   render(){
 
     return (
       <header>
         <h1 className="navbar">Hair Guy'd<br />
-          <small>Dads guiding other dads on doing their princess's hair.</small>
+          <small>Dads guyding other dads on doing their princess's hair.</small>
         </h1>
         <nav>
           <ul className="container">
-            <li><Link className="nav-link" to="/">Home</Link></li>
-            <li><Link className="nav-link" to="/animals">Animals</Link></li>
-            <li><Link className="nav-link" to="/locations">Locations</Link></li>
-            <li><Link className="nav-link" to="/employees">Employees</Link></li>
-            <li><Link className="nav-link" to="/owners">Owners</Link></li>
+            {
+            (this.props.user)
+            ? 
+            <>
+            <li><Link className="nav-link" to="/hairtypes">Hair Types</Link></li>
+            <li><Link className="nav-link" to="/straight">Straight Hair</Link></li>
+            <li><Link className="nav-link" to="/wavy">Wavy Hair</Link></li>
+            <li><Link className="nav-link" to="/curly">Curly Hair</Link></li>
+            <li><Link className="nav-link" to="/coily">Coily Hair</Link></li>
+            <li><span className="nav-link" onClick={this.handleLogout}>Logout</span></li>
+            </>
+            : this.props.history.push('/')
+            }
           </ul>
         </nav>
       </header>
     )
   }
 }
+
 export default NavBar;

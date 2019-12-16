@@ -14,7 +14,7 @@ class NavBar extends Component {
     return (
       <header>
         <h1 className="navbar">Hair Guy'd<br />
-          <small>Dads guyding other dads on doing their princess's hair.</small>
+          <small>Dads guyding other dads on doing their daughter's hair.</small>
         </h1>
         <nav>
           <ul className="container">

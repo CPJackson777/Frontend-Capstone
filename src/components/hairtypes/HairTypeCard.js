@@ -9,11 +9,12 @@ class HairTypeCard extends Component {
           <picture>
             <img src={require('./Paul gives Ringo props.jpg')} alt="Coily Hair Pic" />
           </picture>
-          {/* <h3>Name: <b>{this.props.animal.name}</b></h3>
-          <p>Breed: {this.props.animal.breed}</p> */}
+          <h3>Type: <b>{this.props.hairtype.title}</b></h3>
+          <p>Description: {this.props.hairtype.description}</p>
          
         
-          <Link to={`/hairtypes/${this.props.hairtype.id}`}><button>Tutorials</button></Link>
+          <Link to={`/hairtypes/${this.props.hairtype.id}`}><button>Tutorials</button></Link> 
+          {/* Above line should link to hairstyles_hairtypes join table */}
         </div>
       </div>
     );

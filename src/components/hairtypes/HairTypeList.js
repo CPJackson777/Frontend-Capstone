@@ -13,7 +13,6 @@ class HairTypeList extends Component {
   }
 
   componentDidMount() {
-    console.log("HAIRTYPE LIST: ComponentDidMount");
     //getAll from ApiManager and hang on to that data; put it in state
     ApiManager.getAll('hairtypes')  
       .then((hairtypesArray) => {
@@ -24,10 +23,13 @@ class HairTypeList extends Component {
   }
 
   render() {
-    console.log("HairTypesList: Render");
-
     return (
       <React.Fragment>
+           <div id="homeBackground" >
+            </div>
+            <div>
+                <h1 id="welcomeHomePageHeader">Choose Your Daughter's Hair Type</h1>
+            </div>
         <div className="container-cards">
           {this.state.hairtypes.map(hairtype =>
             <HairTypeCard

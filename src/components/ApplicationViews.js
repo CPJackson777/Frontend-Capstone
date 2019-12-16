@@ -4,8 +4,7 @@ import { Route, Redirect } from "react-router-dom"
 import Welcome from './welcome/Welcome';
 import SignUp from "./auth/SignUp";
 import Login from "./auth/Login";
-//***********Home****************
-import HairTypeHome from "./hairtypes/hairTypeHome";
+//***********Hair Types****************
 import HairTypeList from './hairtypes/HairTypeList'
 
 
@@ -34,14 +33,9 @@ class ApplicationViews extends Component {
 
                 <Route exact path="/hairtypes" render={(props) => {
                     return this.props.isLoggedIn ?
-                        <HairTypeHome {...props} />
-                        :
-                        <Redirect to="/" />
-                }}
-                />
-
-                <Route exact path="/hairtypes" render={(props) => {
-                    return <HairTypeList />
+                    <HairTypeList {...props} />
+                    :
+                    <Redirect to="/" />
                 }} />
             </>
         );

@@ -70,13 +70,13 @@ class SignUp extends Component {
 
                                 <label htmlFor="firstNameInput">First Name: </label>
                                 <input onChange={this.signUpFieldChange} type="name"
-                                    id="firstname"
+                                    id="firstName"
                                     placeholder="First Name"
                                     required="" />
 
                                 <label htmlFor="lastNameInput">Last Name: </label>
                                 <input onChange={this.signUpFieldChange} type="name"
-                                    id="lastname"
+                                    id="lastName"
                                     placeholder="Last Name"
                                     required="" />
 

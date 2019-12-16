@@ -7,7 +7,7 @@ class HairTypeCard extends Component {
       <div className="card">
         <div className="card-content">
           <picture>
-            <img src={require('./Paul gives Ringo props.jpg')} alt="Coily Hair Pic" />
+            <img src={require(`./${this.props.hairtype.img}`)} alt="Hair Type Pic" />
           </picture>
           <h3>Type: <b>{this.props.hairtype.title}</b></h3>
           <p>Description: {this.props.hairtype.description}</p>

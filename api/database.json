@@ -27,25 +27,25 @@
       "id": 1,
       "title": "Straight",
       "description": "Type 1 hair that is described as fine, very thin and soft with a noticeable shine.",
-      "img": "coily.svg"
+      "img": "straight1.jpg"
     },
     {
       "id": 2,
       "title": "Wavy",
       "description": "Type 2 hair that has waves that tend to adhere to the shape of your head.",
-      "img": "coily.svg"
+      "img": "wavy1.jpg"
     },
     {
       "id": 3,
       "title": "Curly",
       "description": "Type 3 hair that ranges from bouncy ringlets (spiral like curls of hair) to tight corkscrews (spiral-shaped corkscrew curls).",
-      "img": "coily.svg"
+      "img": "curly1.jpg"
     },
     {
       "id": 4,
       "title": "Coily",
       "description": "Type 4 hair that appears to be coarse, however, it is really very fine, with several thin hair strands densely packed together in tight coils.",
-      "img": "coily.svg"
+      "img": "coily1.jpg"
     }
   ],
   "hairstyles": [

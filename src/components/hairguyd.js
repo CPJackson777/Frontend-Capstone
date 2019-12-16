@@ -48,7 +48,7 @@ componentDidMount(){
     return (
       <>
       <NavBar isLoggedIn={this.state.isLoggedIn} clearUser={this.clearUser} />
-      <ApplicationViews isLoggedIn={this.state.isLoggedIn}
+      <ApplicationViews isAuthenticated={this.isAuthenticated}
                         setUser={this.setUser} />
       </>
     );

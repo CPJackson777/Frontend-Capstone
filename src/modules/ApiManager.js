@@ -32,46 +32,11 @@ export default {
             .then(response => response.json())
     },
 
-    get(hairtypes, id) {
-        return fetch(`${baseURL}/${hairtypes}/${id}`).then(result => result.json())
+    get(endpoint, id) {
+        return fetch(`${baseURL}/${endpoint}/${id}`).then(result => result.json())
     },
 
-    getAll(hairtypes) {
-        return fetch(`${baseURL}/${hairtypes}`).then(result => result.json())
-    },
-
-    get(hairstyles, id) {
-        return fetch(`${baseURL}/${hairstyles}/${id}`).then(result => result.json())
-    },
-
-    getAll(hairstyles) {
-        return fetch(`${baseURL}/${hairstyles}`).then(result => result.json())
+    getAll(endpoint) {
+        return fetch(`${baseURL}/${endpoint}`).then(result => result.json())
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-    // // This fetch call gets one object from tableName.
-    // get(tableName, id) {
-    //     return fetch(`${baseURL}/${tableName}/${id}`).then(result => result.json())
-    // },
-    // // This fetch call gets all objects from tableName.
-    // getAll(tableName) {
-    //     return fetch(`${baseURL}/${tableName}`).then(result => result.json())
-    // },
-    // getAllforLoggedInUser(userId, tableName) {
-    //     return fetch(`${baseURL}/users/${userId}/${tableName}`).then(result => result.json())
-    // },
-    // // This fetch call uses _expand to get all objects including the name associated with the userId.
-    // getAllWithUserNames(tableName, userId) {
-    //     return fetch(`${baseURL}/${tableName}?_expand=user`).then(result => result.json(userId))
-    // },

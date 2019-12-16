@@ -35,9 +35,18 @@ export default {
     get(hairtypes, id) {
         return fetch(`${baseURL}/${hairtypes}/${id}`).then(result => result.json())
     },
+
     getAll(hairtypes) {
         return fetch(`${baseURL}/${hairtypes}`).then(result => result.json())
-    }
+    },
+
+    get(hairstyles, id) {
+        return fetch(`${baseURL}/${hairstyles}/${id}`).then(result => result.json())
+    },
+
+    getAll(hairstyles) {
+        return fetch(`${baseURL}/${hairstyles}`).then(result => result.json())
+    },
 }
 
 

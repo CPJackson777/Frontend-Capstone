@@ -6,6 +6,8 @@ import SignUp from "./auth/SignUp";
 import Login from "./auth/Login";
 //***********Hair Types****************
 import HairTypeList from './hairtypes/HairTypeList'
+//***********Hair Styles****************
+import HairStyleList from './hairstyles/HairStyleList'
 
 
 class ApplicationViews extends Component {
@@ -33,9 +35,16 @@ class ApplicationViews extends Component {
 
                 <Route exact path="/hairtypes" render={(props) => {
                     return this.props.isLoggedIn ?
-                    <HairTypeList {...props} />
-                    :
-                    <Redirect to="/" />
+                        <HairTypeList {...props} />
+                        :
+                        <Redirect to="/" />
+                }} />
+
+                <Route exact path="/hairstyles" render={(props) => {
+                    return this.props.isLoggedIn ?
+                        <HairStyleList {...props} />
+                        :
+                        <Redirect to="/" />
                 }} />
             </>
         );

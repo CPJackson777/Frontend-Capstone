@@ -20,6 +20,13 @@
       "lastName": "Crowley",
       "email": "ryancrowley@email.com",
       "password": "ryanhair"
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "abc@abc.com",
+      "password": "123",
+      "id": 4
     }
   ],
   "hairtypes": [
@@ -85,8 +92,13 @@
   "hairstyles_hairtypes": [
     {
       "id": 1,
-      "hairTypeId": 1,
-      "hairStyleId": 1
+      "hairtypeId": 1,
+      "hairstyleId": 1
+    },
+    {
+      "id": 2,
+      "hairtypeId": 2,
+      "hairstyleId": 2
     }
   ]
 }

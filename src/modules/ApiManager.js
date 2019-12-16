@@ -38,5 +38,14 @@ export default {
 
     getAll(endpoint) {
         return fetch(`${baseURL}/${endpoint}`).then(result => result.json())
-    }
+    },
+
+    /************************************************
+    Fetch all hairstyles for the selected hairtype 
+    ***********************************************/
+//    getAllHairStylesForOneHairType() {
+//     console.log("getAll successful")
+//     return fetch(`${baseURL}/hairstyles?_expand=hairtype`)
+//         .then(result => result.json())
+// },
 }

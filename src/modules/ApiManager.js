@@ -43,10 +43,10 @@ export default {
     //************************************************
     //Fetch all hairstyles for the selected hairtype 
     //***********************************************
-//    http://localhost:5002/hairstyles_hairtypes?_expand=hairstyle&_expand=hairtype
-   getAllHairStylesForOneHairType() {
-    console.log("getAll successful")
-    return fetch(`${baseURL}/hairstyles_hairtypes?_expand=hairstyle`)
+//    http://localhost:5002/hairstyles_hairtypes/?hairtypeid=1&_expand=hairstyle
+   getAllHairStylesForOneHairType(hairTypeId) {
+    console.log(hairTypeId)
+    return fetch(`${baseURL}/hairstyles_hairtypes?hairtypeId=${hairTypeId}&_expand=hairstyle`)
         .then(result => result.json())
 },
 }

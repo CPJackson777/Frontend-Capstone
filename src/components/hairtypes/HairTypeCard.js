@@ -13,7 +13,7 @@ class HairTypeCard extends Component {
           <p>Description: {this.props.hairtype.description}</p>
          
         
-          <Link to={`/hairtypes/${this.props.hairtype.id}`}><button>Tutorials</button></Link> 
+          <Link to={`/hairtypes_hairstyles/${this.props.hairtype.id}`}><button>Tutorials</button></Link> 
           {/* Above line should link to hairstyles_hairtypes join table */}
         </div>
       </div>

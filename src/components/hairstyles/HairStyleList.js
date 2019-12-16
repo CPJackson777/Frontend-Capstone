@@ -11,7 +11,7 @@ class HairStyleList extends Component {
 
   componentDidMount() {
     //getAll from ApiManager and hang on to that data; put it in state
-    ApiManager.getAll('hairstyles')
+    ApiManager.getAllHairStylesForOneHairType(1)//change to this.props...reference edit chapter
       .then((hairstylesArray) => {
         this.setState({
           hairstyles: hairstylesArray

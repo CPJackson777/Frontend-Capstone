@@ -40,7 +40,7 @@ class ApplicationViews extends Component {
                         <Redirect to="/" />
                 }} />
 
-                <Route exact path="/hairstyles" render={(props) => {
+                <Route exact path="/hairstyles_hairtypes" render={(props) => {
                     return this.props.isAuthenticated() ?
                         <HairStyleList {...props} />
                         :

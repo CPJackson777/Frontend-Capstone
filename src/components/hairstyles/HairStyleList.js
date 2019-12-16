@@ -45,7 +45,7 @@ class HairStyleList extends Component {
           </button>
         </section>
         <div className="container-cards">
-          {this.state.hairstyles.map(hairStyle =>
+          {this.state.hairstyles.map(hairstyle =>
             <HairStyleCard
               key={hairstyle.id}
               hairstyle={hairstyle}

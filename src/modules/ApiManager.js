@@ -46,7 +46,7 @@ export default {
 
     getAll(hairstyles) {
         return fetch(`${baseURL}/${hairstyles}`).then(result => result.json())
-    },
+    }
 }
 
 

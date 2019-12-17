@@ -7,15 +7,31 @@ class HairStyleList extends Component {
   //define what this component needs to render
   state = {
     hairstyles: [],
+    hairtypeId: ""
   }
 
   componentDidMount() {
-    ApiManager.getAllHairStylesForOneHairType(this.props.match.params.hairtypeId)//change to this.props...reference edit chapter
+    console.log("cdm running")
+    ApiManager.getAllHairStylesForOneHairType(this.props.match.params.hairtypeId)
       .then((hairstylesArray) => {
         this.setState({
-          hairstyles: hairstylesArray
+          hairstyles: hairstylesArray,
+          hairtypeId: this.props.match.params.hairtypeId
         })
       })
+  }
+
+  componentDidUpdate(prevProps) {
+   if (prevProps.hairtypeId !== this.props.hairtypeId) {
+     console.log("different hairstyle)")
+     ApiManager.getAllHairStylesForOneHairType(this.props.match.params.hairtypeId)
+     .then((hairstylesArray) => {
+       this.setState({
+         hairstyles: hairstylesArray,
+         hairtypeId: this.props.match.params.hairtypeId
+       })
+     })
+   }
   }
 
   deleteHairStyle = id => {
@@ -42,14 +58,22 @@ class HairStyleList extends Component {
           </button>
         </section>
         <div className="container-cards">
-          {this.state.hairstyles.map(hairstyle =>
-            <HairStyleCard
-              key={hairstyle.id}
-              hairstyle={hairstyle.hairstyle}
-              deleteHairStyle={this.deleteHairStyle}
-              {...this.props}
-            />
-          )}
+                    {this.state.hairstyles.length === 0
+                        ?
+                        null
+                        :
+                        <>
+                        <div>render correct please</div>
+                            {this.state.hairstyles.map(hairstyle => 
+                                <HairStyleCard
+                                    key={hairstyle.id}
+                                    hairstyle={hairstyle.hairstyle}
+                                    deleteHairStyle={this.deleteHairStyle}
+                                    {...this.props}
+                                />
+                             )}
+                        </>
+}
         </div>
       </React.Fragment>
     )

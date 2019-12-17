@@ -29,7 +29,7 @@ class HairStyleForm extends Component {
                     window.alert("What hair type is this style for?")
                 } else {
                     this.setState({ loadingStatus: true })
-                    const hairstlye = {
+                    const hairstyle = {
                         styleName: this.state.styleName,
                         instructions: this.state.instructions,
                         img: this.state.img,
@@ -39,7 +39,7 @@ class HairStyleForm extends Component {
                     };
 
                     ApiManager.post(hairstyle)
-                        .then(() => this.props.history.push("/animals"));
+                        .then(() => this.props.history.push("/hairstyles"));
                 }
             }
         }
@@ -71,10 +71,9 @@ class HairStyleForm extends Component {
                             />
                             <label htmlFor="breed">Breed</label>
                             <label htmlFor="image">Image</label>
-
-                            {/* This image tag will contain the uploaded image because we are using the imageUrl property in state which we change when the image is uploaded*/}
+                          
                             <img className="uploadImage" src={this.state.imageUrl} alt="" />
-                            <button onClick={this.uploadWidget.bind(this)} className="upload-button">
+                            <button>
                                 Add Image
                 </button>
                         </div>
@@ -82,7 +81,7 @@ class HairStyleForm extends Component {
                             <button
                                 type="button"
                                 disabled={this.state.loadingStatus}
-                                onClick={this.constructNewAnimal}
+                                onClick={this.addNewHairStyle}
                             >Submit</button>
                         </div>
                     </fieldset>

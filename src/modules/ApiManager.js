@@ -49,4 +49,14 @@ export default {
     return fetch(`${baseURL}/hairstyles_hairtypes?hairtypeId=${hairtypeId}&_expand=hairstyle`)
         .then(result => result.json())
 },
+
+post(newHairStyle) {
+    return fetch(`${baseURL}/hairstyles`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newHairStyle)
+    }).then(data => data.json())
+  }
 }

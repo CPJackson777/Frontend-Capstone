@@ -23,10 +23,10 @@ class NavBar extends Component {
             ? 
             <>
             <li><Link className="nav-link" to="/hairtypes">Hair Types</Link></li>
-            <li><Link className="nav-link" to="/hairtypes/1">Straight Hair</Link></li>
-            <li><Link className="nav-link" to="/hairtypes/2">Wavy Hair</Link></li>
-            <li><Link className="nav-link" to="/hairtypes/3">Curly Hair</Link></li>
-            <li><Link className="nav-link" to="/hairtypes/4">Coily</Link></li>
+            <li><Link className="nav-link" to="/hairstyles/1">Straight Hair</Link></li>
+            <li><Link className="nav-link" to="/hairstyles/2">Wavy Hair</Link></li>
+            <li><Link className="nav-link" to="/hairstyles/3">Curly Hair</Link></li>
+            <li><Link className="nav-link" to="/hairstyles/4">Coily</Link></li>
             <li><span className="nav-link" onClick={this.handleLogout}>Logout</span></li>
             </>
             : null

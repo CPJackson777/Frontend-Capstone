@@ -8,6 +8,7 @@ import Login from "./auth/Login";
 import HairTypeList from './hairtypes/HairTypeList'
 //***********Hair Styles****************
 import HairStyleList from './hairstyles/HairStyleList'
+import HairStyleForm from "./hairstyles/HairStyleForm"
 
 
 class ApplicationViews extends Component {
@@ -40,14 +41,19 @@ class ApplicationViews extends Component {
                         <Redirect to="/" />
                 }} />
 
-                <Route path="/hairtypes/:hairtypeId(\d+)" render={(props) => {
+                <Route path="/hairstyles/:hairtypeId(\d+)" render={(props) => {
                     return this.props.isAuthenticated() ?
                         <HairStyleList
-                        hairtypeId={parseInt(props.match.params.hairtypeId)} 
-                        {...props} />
+                            hairtypeId={parseInt(props.match.params.hairtypeId)}
+                            {...props} />
                         :
                         <Redirect to="/" />
                 }} />
+
+                <Route path="/hairstyles/new" render={props => {
+                    return <HairStyleForm {...props} />
+                }}
+                />
             </>
         );
 

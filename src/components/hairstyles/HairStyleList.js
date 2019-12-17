@@ -11,7 +11,7 @@ class HairStyleList extends Component {
   }
 
   componentDidMount() {
-    console.log("cdm running")
+    
     ApiManager.getAllHairStylesForOneHairType(this.props.match.params.hairtypeId)
       .then((hairstylesArray) => {
         this.setState({
@@ -22,16 +22,15 @@ class HairStyleList extends Component {
   }
 
   componentDidUpdate(prevProps) {
-   if (prevProps.hairtypeId !== this.props.hairtypeId) {
-     console.log("different hairstyle)")
-     ApiManager.getAllHairStylesForOneHairType(this.props.match.params.hairtypeId)
-     .then((hairstylesArray) => {
-       this.setState({
-         hairstyles: hairstylesArray,
-         hairtypeId: this.props.match.params.hairtypeId
-       })
-     })
-   }
+    if (prevProps.hairtypeId !== this.props.hairtypeId) {
+      ApiManager.getAllHairStylesForOneHairType(this.props.match.params.hairtypeId)
+        .then((hairstylesArray) => {
+          this.setState({
+            hairstyles: hairstylesArray,
+            hairtypeId: this.props.match.params.hairtypeId
+          })
+        })
+    }
   }
 
   deleteHairStyle = id => {
@@ -47,7 +46,6 @@ class HairStyleList extends Component {
   }
 
   render() {
-      console.log(this.state)
     return (
       <React.Fragment>
         <section className="section-content">
@@ -58,24 +56,16 @@ class HairStyleList extends Component {
           </button>
         </section>
         <div className="container-cards">
-                    {this.state.hairstyles.length === 0
-                        ?
-                        null
-                        :
-                        <>
-                        <div>render correct please</div>
-                            {this.state.hairstyles.map(hairstyle => 
-                                <HairStyleCard
-                                    key={hairstyle.id}
-                                    hairstyle={hairstyle.hairstyle}
-                                    deleteHairStyle={this.deleteHairStyle}
-                                    {...this.props}
-                                />
-                             )}
-                        </>
-}
+          {this.state.hairstyles.map(hairstyle =>
+            <HairStyleCard
+              key={hairstyle.id}
+              hairstyle={hairstyle.hairstyle}
+              deleteHairStyle={this.deleteHairStyle}
+              {...this.props}
+            />
+          )}
         </div>
-      </React.Fragment>
+      </React.Fragment >
     )
   }
 }

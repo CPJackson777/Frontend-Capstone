@@ -77,7 +77,7 @@
       "userId": 3,
       "styleName": "Pigtails",
       "instructions": "Make some pig tails.",
-      "imgUrl": "imgUrl.svg",
+      "imgUrl": "461752240-H.jpg",
       "videoUrl": "youtube.com"
     },
     {
@@ -85,7 +85,7 @@
       "userId": 4,
       "styleName": "French Braids",
       "instructions": "Braid em like you in France baby!",
-      "imgUrl": "imgUrl.svg",
+      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
       "videoUrl": "youtube.com"
     }
   ],
@@ -93,12 +93,12 @@
     {
       "id": 1,
       "hairtypeId": 1,
-      "hairstyleId": 1
+      "hairstyleId": 3
     },
     {
       "id": 2,
       "hairtypeId": 1,
-      "hairstyleId": 2
+      "hairstyleId": 4
     }
   ]
 }

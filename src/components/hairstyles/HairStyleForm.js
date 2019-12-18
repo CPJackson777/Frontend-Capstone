@@ -54,24 +54,27 @@ class HairStyleForm extends Component {
                 <form>
                     <fieldset>
                         <div className="formgrid">
+                            <label htmlFor="styleName">Hair Style Name: </label>
                             <input
                                 type="text"
+                                id="styleName"
                                 required
                                 onChange={this.handleFieldChange}
-                                id="animalName"
-                                placeholder="Animal name"
+                                placeholder="Hair Style Name"
                             />
-                            <label htmlFor="animalName">Name</label>
-                            <input
-                                type="text"
+                            <label htmlFor="breed">Instructions: </label>
+                            <textarea
+                                id="instructions"
                                 required
                                 onChange={this.handleFieldChange}
-                                id="breed"
-                                placeholder="Breed"
-                            />
-                            <label htmlFor="breed">Breed</label>
+                                cols="40"
+                                rows="5"
+                                placeholder="Guyd other dads on how to create this style."
+                            >
+                            </textarea>
+
                             <label htmlFor="image">Image</label>
-                          
+
                             <img className="uploadImage" src={this.state.imageUrl} alt="" />
                             <button>
                                 Add Image

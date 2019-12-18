@@ -74,11 +74,11 @@
     },
     {
       "id": 3,
-      "userId": 3,
-      "styleName": "Pigtails",
-      "instructions": "Make some pig tails.",
+      "styleName": "Pigtails edited",
       "imgUrl": "461752240-H.jpg",
-      "videoUrl": "youtube.com"
+      "instructions": "Make some pig tails.",
+      "videoUrl": "youtube.com",
+      "hairtypeId": null
     },
     {
       "id": 4,

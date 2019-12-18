@@ -33,11 +33,13 @@ export default {
     },
 
     get(endpoint, id) {
-        return fetch(`${baseURL}/${endpoint}/${id}`).then(result => result.json())
+        return fetch(`${baseURL}/${endpoint}/${id}`)
+        .then(result => result.json())
     },
 
     getAll(endpoint) {
-        return fetch(`${baseURL}/${endpoint}`).then(result => result.json())
+        return fetch(`${baseURL}/${endpoint}`)
+        .then(result => result.json())
     },
 
     //************************************************
@@ -58,5 +60,15 @@ post(newHairStyle) {
       },
       body: JSON.stringify(newHairStyle)
     }).then(data => data.json())
+  },
+
+  update(editedHairStyle) {
+    return fetch(`${baseURL}/hairstyles/${editedHairStyle.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedHairStyle)
+    }).then(data => data.json());
   }
 }

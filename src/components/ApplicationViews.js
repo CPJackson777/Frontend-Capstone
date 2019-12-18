@@ -9,6 +9,7 @@ import HairTypeList from './hairtypes/HairTypeList'
 //***********Hair Styles****************
 import HairStyleList from './hairstyles/HairStyleList'
 import HairStyleForm from "./hairstyles/HairStyleForm"
+import HairStyleEditForm from './hairstyles/HairStyleEditForm'
 
 
 class ApplicationViews extends Component {
@@ -52,6 +53,11 @@ class ApplicationViews extends Component {
 
                 <Route path="/hairstyles/new" render={props => {
                     return <HairStyleForm {...props} />
+                }}
+                />
+
+                <Route path="/hairstyles/:hairstyleId(\d+)/edit" render={props => {
+                    return <HairStyleEditForm {...props} />
                 }}
                 />
             </>

@@ -15,7 +15,9 @@ class HairStyleCard extends Component {
                     <div>
                         <h4>Watch Tutorial: <span>{this.props.hairstyle.videoUrl}</span></h4>
                     </div>
-                    <button type="button">
+                    <button 
+                    type="button" 
+                    onClick={() => { this.props.history.push(`/hairstyles/${this.props.hairstyle.id}/edit`) }}>
                         Edit
                     </button>
                     <button type="button">

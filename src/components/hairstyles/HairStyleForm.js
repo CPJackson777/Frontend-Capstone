@@ -49,7 +49,7 @@ class HairStyleForm extends Component {
 
 //I wrote this as a fat arrow function because I wanted to use this.state()
 uploadWidget = () => {
-    window.cloudinary.openUploadWidget({ cloud_name: 'YOUR_CLOUD_NAME', upload_preset: 'YOUR_UPLOAD_PRESET_NAME', tags:['atag']},
+    window.cloudinary.openUploadWidget({ cloud_name: 'chollyp7', upload_preset: 'YOUR_UPLOAD_PRESET_NAME', tags:['atag']},
         (error, result) => {
             // See what cloudinary returns
             console.log(result);

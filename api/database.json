@@ -27,6 +27,13 @@
       "email": "abc@abc.com",
       "password": "123",
       "id": 4
+    },
+    {
+      "firstName": "jisie",
+      "lastName": "david",
+      "email": "jisie@jisie.com",
+      "password": "jisie",
+      "id": 5
     }
   ],
   "hairtypes": [
@@ -74,7 +81,7 @@
     },
     {
       "id": 3,
-      "styleName": "Pigtails edited uh",
+      "styleName": "Pigtails edited again",
       "imgUrl": "461752240-H.jpg",
       "instructions": "Make some pig tails.",
       "videoUrl": "youtube.com"

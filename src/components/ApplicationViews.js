@@ -57,7 +57,9 @@ class ApplicationViews extends Component {
                 />
 
                 <Route path="/hairstyles/:hairstyleId(\d+)/edit" render={props => {
-                    return <HairStyleEditForm {...props} />
+                    return <HairStyleEditForm 
+                    hairtypeId={parseInt(props.match.params.hairtypeId)}
+                    {...props} />
                 }}
                 />
             </>

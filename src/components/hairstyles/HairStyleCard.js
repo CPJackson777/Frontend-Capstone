@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 
 
 class HairStyleCard extends Component {
+
+
     render() {
         return (
             <div className="card">
@@ -20,7 +22,8 @@ class HairStyleCard extends Component {
                     onClick={() => { this.props.history.push(`/hairstyles/${this.props.hairstyle.id}/edit`) }}>
                         Edit
                     </button>
-                    <button type="button">
+                    <button type="button"
+                    onClick={() => this.props.deleteHairStyle(this.props.hairstyle.id)}>
                         Delete
                     </button>
                     {/* <Link to={`/hairstyles/${this.props.hairstyle.id}`}><button>See More</button></Link> */}

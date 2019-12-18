@@ -70,5 +70,12 @@ post(newHairStyle) {
       },
       body: JSON.stringify(editedHairStyle)
     }).then(data => data.json());
-  }
+  },
+
+  delete(id) {
+    return fetch(`${baseURL}/hairstyles/${id}`, {
+      method: "DELETE"
+    })
+      .then(result => result.json())
+  },
 }

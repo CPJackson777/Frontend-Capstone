@@ -36,7 +36,7 @@ class HairStyleList extends Component {
   deleteHairStyle = id => {
     ApiManager.delete(id)
       .then(() => {
-        ApiManager.getAll()
+        ApiManager.getAllHairStylesForOneHairType(this.props.match.params.hairtypeId)
           .then((newHairStyles) => {
             this.setState({
               hairstyles: newHairStyles
@@ -65,7 +65,7 @@ class HairStyleList extends Component {
             />
           )}
         </div>
-      </React.Fragment >
+      </React.Fragment > 
     )
   }
 }

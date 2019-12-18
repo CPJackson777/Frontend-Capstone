@@ -11,7 +11,6 @@ class HairStyleEditForm extends Component {
         instructions: "",
         videoUrl: "",
         hairtypeId: "",
-        // employees: []
         loadingStatus: true
     };
 
@@ -29,14 +28,11 @@ class HairStyleEditForm extends Component {
             styleName: this.state.styleName,
             imgUrl: this.state.imgUrl,
             instructions: this.state.instructions,
-            videoUrl: this.state.videoUrl,
-            hairtypeId: Number(this.state.hairtypeId)
-            
-        
+            videoUrl: this.state.videoUrl
         };
 
         ApiManager.update(editedHairStyle)
-            .then(() => this.props.history.push("/hairstyles"))
+            .then(() => this.props.history.push(`/hairstyles/${Number(this.state.hairtypeId)}`))
     }
 
     componentDidMount() {

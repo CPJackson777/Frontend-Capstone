@@ -4,7 +4,7 @@ import ApiManager from '../../modules/ApiManager'
 class HairStyleForm extends Component {
     state = {
         styleName: "",
-        img: "",
+        imgUrl: "",
         instructions: "",
         videoUrl: "",
         hairtypeId: "",
@@ -32,7 +32,7 @@ class HairStyleForm extends Component {
                     const hairstyle = {
                         styleName: this.state.styleName,
                         instructions: this.state.instructions,
-                        img: this.state.img,
+                        imgUrl: this.state.imgUrl,
                         videoUrl: this.state.videoUrl,
                         hairtypeId: this.state.hairtypeId,
                         userId: Number(localStorage.getItem("activeUser"))
@@ -45,7 +45,22 @@ class HairStyleForm extends Component {
         }
     }
 
+// Uploading images to Cloudinary: https://cloudinary.com/blog/how_to_build_an_image_library_with_react_cloudinary#uploading_images
 
+//I wrote this as a fat arrow function because I wanted to use this.state()
+uploadWidget = () => {
+    window.cloudinary.openUploadWidget({ cloud_name: 'YOUR_CLOUD_NAME', upload_preset: 'YOUR_UPLOAD_PRESET_NAME', tags:['atag']},
+        (error, result) => {
+            // See what cloudinary returns
+            console.log(result);
+  
+            // Building the entire URL for the uploaded image using the data cloudinary returns
+            console.log("https://res.cloudinary.com/dveixyqzy/image/upload/v1576090193/" + result[0].public_id)
+  
+            // Just like other input forms, changing state so that the imageUrl property will contain the URL of the uploaded image
+            this.setState({imageUrl: `https://res.cloudinary.com/dveixyqzy/image/upload/v1576090193/${result[0].public_id}`})
+        });
+  }
 
 
     render() {
@@ -73,12 +88,11 @@ class HairStyleForm extends Component {
                             >
                             </textarea>
 
-                            <label htmlFor="image">Image</label>
-
-                            <img className="uploadImage" src={this.state.imageUrl} alt="" />
-                            <button>
+                            <label htmlFor="image">Picture of Finished Style:</label>
+                            <img className="uploadImage" src={this.state.imageUrl} alt="showing hair style" />
+                            <button onClick={this.uploadWidget.bind(this)} className="upload-button">
                                 Add Image
-                </button>
+                            </button>
                         </div>
                         <div className="alignRight">
                             <button

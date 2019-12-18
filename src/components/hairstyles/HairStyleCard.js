@@ -9,7 +9,7 @@ class HairStyleCard extends Component {
                 <div className="card-content">
                     <h3>Style: <span className="card-petname">{this.props.hairstyle.styleName}</span></h3>
                     <picture>
-                        <img src={require(`./${this.props.hairstyle.imgUrl}`)} alt="My Dog" />
+                        <img src={require(`./${this.props.hairstyle.imgUrl}`)} alt="Hair Style" />
                     </picture>
                     <p>Instructions: <span>{this.props.hairstyle.instructions}</span></p>
                     <div>

@@ -47,7 +47,7 @@ class HairStyleForm extends Component {
                         imgUrl: this.state.imgUrl,
                         videoUrl: this.state.videoUrl,
                         hairtypeId: parseInt(this.state.hairtypeId),
-                        userId: Number(localStorage.getItem("activeUser"))
+                        // userId: Number(localStorage.getItem("activeUser"))
                     };
 
                     ApiManager.post(hairstyle)

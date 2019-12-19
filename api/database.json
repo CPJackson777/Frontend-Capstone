@@ -59,32 +59,10 @@
     },
     {
       "id": 2,
-      "styleName": "Pony Tail 2nd one",
+      "styleName": "Pony Tail 2nd one again",
       "imgUrl": "461752240-H.jpg",
       "instructions": "Make a pony tail again.",
       "videoUrl": "youtube.com",
-      "hairtypeId": 1
-    },
-    {
-      "styleName": "youtube.com",
-      "instructions": "do it!!!",
-      "imgUrl": "",
-      "videoUrl": "",
-      "id": 3
-    },
-    {
-      "styleName": "u.com",
-      "instructions": "gvyhbyby",
-      "imgUrl": "",
-      "videoUrl": "",
-      "id": 4
-    },
-    {
-      "styleName": "test name",
-      "instructions": "test instructions",
-      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "videoUrl": "testvideolink.com",
-      "id": 5,
       "hairtypeId": 1
     },
     {
@@ -96,40 +74,12 @@
       "id": 6
     },
     {
-      "styleName": "work please!!!!!!!!!!!",
-      "instructions": "work",
+      "styleName": "charles test",
+      "instructions": "charles test",
       "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "videoUrl": "curly.com/videos",
+      "videoUrl": "test.com",
       "hairtypeId": 3,
-      "userId": 0,
       "id": 7
-    },
-    {
-      "styleName": "curly rose",
-      "instructions": "ffffffffffff",
-      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "videoUrl": "ffffffffff.com",
-      "hairtypeId": null,
-      "userId": 0,
-      "id": 8
-    },
-    {
-      "styleName": "perm",
-      "instructions": "perm",
-      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "videoUrl": "curly.com/videos",
-      "hairtypeId": 4,
-      "userId": 0,
-      "id": 9
-    },
-    {
-      "styleName": "baldy",
-      "instructions": "baldy",
-      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "videoUrl": "curly.com/videos",
-      "hairtypeId": 2,
-      "userId": 0,
-      "id": 10
     }
   ]
 }

@@ -56,6 +56,36 @@
       "instructions": "Make a pony tail.",
       "videoUrl": "youtube.com",
       "hairtypeId": 1
+    },
+    {
+      "id": 2,
+      "styleName": "Pony Tail 2nd one",
+      "imgUrl": "461752240-H.jpg",
+      "instructions": "Make a pony tail again.",
+      "videoUrl": "youtube.com",
+      "hairtypeId": 1
+    },
+    {
+      "styleName": "youtube.com",
+      "instructions": "do it!!!",
+      "imgUrl": "",
+      "videoUrl": "",
+      "id": 3
+    },
+    {
+      "styleName": "u.com",
+      "instructions": "gvyhbyby",
+      "imgUrl": "",
+      "videoUrl": "",
+      "id": 4
+    },
+    {
+      "styleName": "test name",
+      "instructions": "test instructions",
+      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
+      "videoUrl": "testvideolink.com",
+      "id": 5,
+      "hairtypeId": 1
     }
   ]
 }

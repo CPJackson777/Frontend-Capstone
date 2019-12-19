@@ -51,15 +51,16 @@ class ApplicationViews extends Component {
                         <Redirect to="/" />
                 }} />
 
+                {/******************* Forms *******************/}
                 <Route path="/hairstyles/new" render={props => {
                     return <HairStyleForm {...props} />
                 }}
                 />
 
                 <Route path="/hairstyles/:hairstyleId(\d+)/edit" render={props => {
-                    return <HairStyleEditForm 
-                    hairstyleId={parseInt(props.match.params.hairstyleId)}
-                    {...props} />
+                    return <HairStyleEditForm
+                        hairstyleId={parseInt(props.match.params.hairstyleId)}
+                        {...props} />
                 }}
                 />
             </>

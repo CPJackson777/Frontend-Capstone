@@ -32,7 +32,7 @@ class HairStyleEditForm extends Component {
         };
 
         ApiManager.update(editedHairStyle)
-            .then(() => this.props.history.push(`/hairstyles/${Number(this.state.hairtypeId)}`))
+            .then(() => this.props.history.push(`/hairstyles/$(this.state.hairtypeId)}`)
     }
 
     componentDidMount() {

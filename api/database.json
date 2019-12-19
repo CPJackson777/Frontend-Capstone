@@ -34,6 +34,13 @@
       "email": "jisie@jisie.com",
       "password": "jisie",
       "id": 5
+    },
+    {
+      "firstName": "c",
+      "lastName": "j",
+      "email": "abcd@abcd.com",
+      "password": "asdf",
+      "id": 6
     }
   ],
   "hairtypes": [
@@ -69,7 +76,8 @@
       "styleName": "Pony Tail",
       "instructions": "Make a pony tail.",
       "imgUrl": "imgUrl.svg",
-      "videoUrl": "youtube.com"
+      "videoUrl": "youtube.com",
+      "hairtypeId": "1"
     },
     {
       "id": 2,
@@ -77,14 +85,16 @@
       "styleName": "Mohawk Puffs",
       "instructions": "Make some mohawk puffs.",
       "imgUrl": "imgUrl.svg",
-      "videoUrl": "youtube.com"
+      "videoUrl": "youtube.com",
+      "hairtypeId": "1"
     },
     {
       "id": 3,
       "styleName": "Pigtails edited again",
       "imgUrl": "461752240-H.jpg",
       "instructions": "Make some pig tails.",
-      "videoUrl": "youtube.com"
+      "videoUrl": "youtube.com",
+      "hairtypeId": "2"
     },
     {
       "id": 4,
@@ -92,19 +102,8 @@
       "styleName": "French Braids",
       "instructions": "Braid em like you in France baby!",
       "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "videoUrl": "youtube.com"
-    }
-  ],
-  "hairstyles_hairtypes": [
-    {
-      "id": 1,
-      "hairtypeId": 1,
-      "hairstyleId": 3
-    },
-    {
-      "id": 2,
-      "hairtypeId": 1,
-      "hairstyleId": 4
+      "videoUrl": "youtube.com",
+      "hairtypeId": "2"
     }
   ]
 }

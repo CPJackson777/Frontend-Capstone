@@ -8,7 +8,9 @@ class HairStyleForm extends Component {
         instructions: "",
         videoUrl: "",
         hairtypeId: "",
-        loadingStatus: false
+        loadingStatus: false,
+        hairtypes: []
+
     }
 
     inputFieldChange = event => {
@@ -16,6 +18,16 @@ class HairStyleForm extends Component {
         stateToChange[event.target.id] = event.target.value;
         this.setState(stateToChange)
     }
+
+    componentDidMount() {
+        //getAll from ApiManager and hang on to that data; put it in state
+        ApiManager.getAll('hairtypes')  
+          .then((hairtypesArray) => {
+            this.setState({
+              hairtypes: hairtypesArray
+            })
+          })
+      }
 
     addNewHairStyle = event => {
         event.preventDefault();
@@ -34,8 +46,8 @@ class HairStyleForm extends Component {
                         instructions: this.state.instructions,
                         imgUrl: this.state.imgUrl,
                         videoUrl: this.state.videoUrl,
-                        // hairtypeId: this.state.hairtypeId,
-                        // userId: Number(localStorage.getItem("activeUser"))
+                        hairtypeId: parseInt(this.state.hairtypeId),
+                        userId: Number(localStorage.getItem("activeUser"))
                     };
 
                     ApiManager.post(hairstyle)
@@ -46,7 +58,9 @@ class HairStyleForm extends Component {
     
 
 
+
     render() {
+        console.log(this.state)
         return (
             <>
                 <form>
@@ -91,11 +105,16 @@ class HairStyleForm extends Component {
                             /> <br></br><br></br>
 
                             <label htmlFor="hairtype-dropdown">Hair Type: </label>
-                            <select id="hairtypeId">
-                                <option value="volvo">Straight</option>
-                                <option value="saab">Wavy</option>
-                                <option value="opel">Curly</option>
-                                <option value="audi">Coily</option>
+                            <select id="hairtypeId"
+                                className="form-control"
+                                    value={this.state.hairtypeId}
+                                onChange={this.inputFieldChange}
+                                >
+                                {this.state.hairtypes.map(hairtype =>
+                                    <option id={hairtype.id} key={hairtype.id} value={hairtype.id}>
+                                        {hairtype.title}
+                                    </option>
+                                )}
                             </select>
 
                         </div>

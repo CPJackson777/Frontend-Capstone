@@ -86,6 +86,14 @@
       "videoUrl": "testvideolink.com",
       "id": 5,
       "hairtypeId": 1
+    },
+    {
+      "styleName": "test coily",
+      "instructions": "do coily hair",
+      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
+      "videoUrl": "youtube.com",
+      "hairtypeId": 4,
+      "id": 6
     }
   ]
 }

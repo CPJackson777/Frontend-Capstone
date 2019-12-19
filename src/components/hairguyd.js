@@ -15,15 +15,15 @@ class HairGuyd extends Component {
   //*******************************************************************************
   // isAuthenticated checks if credentials are in local storage returns true/false
   //*******************************************************************************
-  isAuthenticated = () => localStorage.getItem("credentials") !== null
+  isAuthenticated = () => localStorage.getItem("activeUser") !== null
 
   //**********************************************
   // Set Store Email and password in local storage
   //**********************************************
-  setUser = (signupObj) => {
+  setUser = (signupArray) => {
     localStorage.setItem(
-      "credentials",
-      JSON.stringify(signupObj)
+      "activeUser",
+      JSON.stringify(signupArray[0].id)
     )
     this.setState({
       isLoggedIn: this.isAuthenticated()

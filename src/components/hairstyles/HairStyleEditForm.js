@@ -29,7 +29,8 @@ class HairStyleEditForm extends Component {
             imgUrl: this.state.imgUrl,
             instructions: this.state.instructions,
             videoUrl: this.state.videoUrl,
-            hairtypeId: Number(this.state.hairtypeId)            
+            hairtypeId: Number(this.state.hairtypeId),
+            userId: Number(localStorage.getItem("activeUser"))            
 
         };
 

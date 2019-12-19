@@ -42,7 +42,7 @@ class ApplicationViews extends Component {
                         <Redirect to="/" />
                 }} />
 
-                <Route path="/hairstyles/:hairtypeId(\d+)" render={(props) => {
+                <Route exact path="/hairstyles/:hairtypeId(\d+)" render={(props) => {
                     return this.props.isAuthenticated() ?
                         <HairStyleList
                             hairtypeId={parseInt(props.match.params.hairtypeId)}
@@ -58,7 +58,7 @@ class ApplicationViews extends Component {
 
                 <Route path="/hairstyles/:hairstyleId(\d+)/edit" render={props => {
                     return <HairStyleEditForm 
-                    hairtypeId={parseInt(props.match.params.hairtypeId)}
+                    hairstyleId={parseInt(props.match.params.hairstyleId)}
                     {...props} />
                 }}
                 />

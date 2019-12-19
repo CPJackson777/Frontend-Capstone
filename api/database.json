@@ -51,38 +51,11 @@
   "hairstyles": [
     {
       "id": 1,
-      "userId": 1,
-      "styleName": "Pony Tail",
+      "styleName": "Pony Tail duhifuigh",
+      "imgUrl": "461752240-H.jpg",
       "instructions": "Make a pony tail.",
-      "imgUrl": "461752240-H.jpg",
       "videoUrl": "youtube.com",
-      "hairtypeId": "1"
-    },
-    {
-      "id": 2,
-      "userId": 2,
-      "styleName": "Mohawk Puffs",
-      "instructions": "Make some mohawk puffs.",
-      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "videoUrl": "youtube.com",
-      "hairtypeId": "1"
-    },
-    {
-      "id": 3,
-      "styleName": "Pigtails edited again",
-      "imgUrl": "461752240-H.jpg",
-      "instructions": "Make some pig tails.",
-      "videoUrl": "youtube.com",
-      "hairtypeId": "2"
-    },
-    {
-      "id": 4,
-      "userId": 4,
-      "styleName": "French Braids",
-      "instructions": "Braid em like you in France baby!",
-      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "videoUrl": "youtube.com",
-      "hairtypeId": "2"
+      "hairtypeId": 1
     }
   ]
 }

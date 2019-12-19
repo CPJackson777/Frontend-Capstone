@@ -6,7 +6,6 @@ class HairStyleList extends Component {
   //define what this component needs to render
   state = {
     hairstyles: [],
-    // hairtypeId: ""
   }
 
   componentDidMount() {

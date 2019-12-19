@@ -15,7 +15,7 @@ class HairStyleCard extends Component {
                     </picture>
                     <p>Instructions: <span>{this.props.hairstyle.instructions}</span></p>
                     <div>
-                        <h4>Watch Tutorial: <span>{this.props.hairstyle.videoUrl}</span></h4>
+                        <a href={this.props.hairstyle.videoUrl}>Watch Tutorial:</a>
                     </div>
                     <button 
                     type="button" 

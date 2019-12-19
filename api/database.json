@@ -50,15 +50,6 @@
   ],
   "hairstyles": [
     {
-      "id": 1,
-      "userId": 2,
-      "styleName": "Pony Tail duhifuigh",
-      "imgUrl": "461752240-H.jpg",
-      "instructions": "Make a pony tail.",
-      "videoUrl": "youtube.com",
-      "hairtypeId": 1
-    },
-    {
       "id": 6,
       "userId": 1,
       "styleName": "test coily",
@@ -75,6 +66,24 @@
       "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
       "videoUrl": "test.com",
       "hairtypeId": 3
+    },
+    {
+      "styleName": "curly rose",
+      "instructions": "rrbrgrgr",
+      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
+      "videoUrl": "curly.com/videos",
+      "hairtypeId": 2,
+      "userId": 2,
+      "id": 8
+    },
+    {
+      "styleName": "regrhrh",
+      "instructions": "fgrhth",
+      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
+      "videoUrl": "curly.com/videos",
+      "hairtypeId": 3,
+      "userId": 2,
+      "id": 9
     }
   ]
 }

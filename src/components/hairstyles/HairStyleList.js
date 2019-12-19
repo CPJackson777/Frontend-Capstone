@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-//import the components we will need
 import HairStyleCard from './HairStyleCard'
 import ApiManager from '../../modules/ApiManager'
 
@@ -7,13 +6,14 @@ class HairStyleList extends Component {
   //define what this component needs to render
   state = {
     hairstyles: [],
-    hairtypeId: ""
+    // hairtypeId: ""
   }
 
   componentDidMount() {
     
     ApiManager.getAllHairStylesForOneHairType(this.props.match.params.hairtypeId)
       .then((hairstylesArray) => {
+          console.log(hairstylesArray)
         this.setState({
           hairstyles: hairstylesArray,
           hairtypeId: this.props.match.params.hairtypeId
@@ -59,7 +59,7 @@ class HairStyleList extends Component {
           {this.state.hairstyles.map(hairstyle =>
             <HairStyleCard
               key={hairstyle.id}
-              hairstyle={hairstyle.hairstyle}
+              hairstyle={hairstyle}
               deleteHairStyle={this.deleteHairStyle}
               {...this.props}
             />

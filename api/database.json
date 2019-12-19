@@ -20,27 +20,6 @@
       "lastName": "Crowley",
       "email": "ryancrowley@email.com",
       "password": "ryanhair"
-    },
-    {
-      "firstName": "",
-      "lastName": "",
-      "email": "abc@abc.com",
-      "password": "123",
-      "id": 4
-    },
-    {
-      "firstName": "jisie",
-      "lastName": "david",
-      "email": "jisie@jisie.com",
-      "password": "jisie",
-      "id": 5
-    },
-    {
-      "firstName": "c",
-      "lastName": "j",
-      "email": "abcd@abcd.com",
-      "password": "asdf",
-      "id": 6
     }
   ],
   "hairtypes": [
@@ -75,7 +54,7 @@
       "userId": 1,
       "styleName": "Pony Tail",
       "instructions": "Make a pony tail.",
-      "imgUrl": "imgUrl.svg",
+      "imgUrl": "461752240-H.jpg",
       "videoUrl": "youtube.com",
       "hairtypeId": "1"
     },
@@ -84,7 +63,7 @@
       "userId": 2,
       "styleName": "Mohawk Puffs",
       "instructions": "Make some mohawk puffs.",
-      "imgUrl": "imgUrl.svg",
+      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
       "videoUrl": "youtube.com",
       "hairtypeId": "1"
     },

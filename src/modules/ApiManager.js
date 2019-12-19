@@ -15,15 +15,17 @@ export default {
     //******************************************************************************************
     // AUTHENTICATION: gets all user data and then add new user data to database and returns all
     //******************************************************************************************
-    createNewUser(user) {
+    postNewUser(newUser) {
         return fetch(`${baseURL}/users`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(user)
+            body: JSON.stringify(newUser)
         }).then(results => results.json())
     },
+
+    
     //*********************************************************************
     // AUTHENTICATION: checks for ??? need to ask for clarification on this
     //*********************************************************************
@@ -45,12 +47,13 @@ export default {
     //************************************************
     //Fetch all hairstyles for the selected hairtype 
     //***********************************************
-//    http://localhost:5002/hairstyles_hairtypes?hairtypeId=1&_expand=hairstyle
+//    http://localhost:5002/hairstyles?hairtypeId=1
    getAllHairStylesForOneHairType(hairtypeId) {
     console.log(hairtypeId)
-    return fetch(`${baseURL}/hairstyles_hairtypes?hairtypeId=${hairtypeId}&_expand=hairstyle`)
+    return fetch(`${baseURL}/hairstyles?hairtypeId=${hairtypeId}`)
         .then(result => result.json())
 },
+
 
 post(newHairStyle) {
     return fetch(`${baseURL}/hairstyles`, {

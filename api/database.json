@@ -51,6 +51,7 @@
   "hairstyles": [
     {
       "id": 1,
+      "userId": 1,
       "styleName": "Pony Tail duhifuigh",
       "imgUrl": "461752240-H.jpg",
       "instructions": "Make a pony tail.",
@@ -58,28 +59,22 @@
       "hairtypeId": 1
     },
     {
-      "id": 2,
-      "styleName": "Pony Tail 2nd one again",
-      "imgUrl": "461752240-H.jpg",
-      "instructions": "Make a pony tail again.",
-      "videoUrl": "youtube.com",
-      "hairtypeId": 1
-    },
-    {
+      "id": 6,
+      "userId": 1,
       "styleName": "test coily",
       "instructions": "do coily hair",
       "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
       "videoUrl": "youtube.com",
-      "hairtypeId": 4,
-      "id": 6
+      "hairtypeId": 4
     },
     {
+      "id": 7,
+      "userId": 1,
       "styleName": "charles test",
       "instructions": "charles test",
       "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
       "videoUrl": "test.com",
-      "hairtypeId": 3,
-      "id": 7
+      "hairtypeId": 3
     }
   ]
 }

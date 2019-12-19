@@ -51,7 +51,7 @@ class HairStyleForm extends Component {
                     };
 
                     ApiManager.post(hairstyle)
-                        .then(() => this.props.history.push("/hairstyles"));
+                        .then(() => this.props.history.push(`/hairstyles/${parseInt(this.state.hairtypeId)}`));
                 }
             }
         }
@@ -60,7 +60,6 @@ class HairStyleForm extends Component {
 
 
     render() {
-        console.log(this.state)
         return (
             <>
                 <form>
@@ -110,6 +109,7 @@ class HairStyleForm extends Component {
                                     value={this.state.hairtypeId}
                                 onChange={this.inputFieldChange}
                                 >
+                                    <option value="">Select an Option</option>
                                 {this.state.hairtypes.map(hairtype =>
                                     <option id={hairtype.id} key={hairtype.id} value={hairtype.id}>
                                         {hairtype.title}

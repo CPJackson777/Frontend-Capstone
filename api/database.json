@@ -51,12 +51,12 @@
   "hairstyles": [
     {
       "id": 6,
-      "userId": 1,
       "styleName": "test coily",
-      "instructions": "do coily hair",
       "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
+      "instructions": "do coily hair",
       "videoUrl": "youtube.com",
-      "hairtypeId": 1
+      "hairtypeId": 4,
+      "userId": 1
     },
     {
       "id": 7,
@@ -71,7 +71,7 @@
       "id": 8,
       "styleName": "curly rose",
       "imgUrl": "hair.jpg",
-      "instructions": "aaaaaaaaaabbbbbbbbbbbbb edited",
+      "instructions": "aaaaaaaaaabbbbbbbbbbbbb",
       "videoUrl": "curly.com/videos",
       "hairtypeId": 4,
       "userId": 2
@@ -84,6 +84,51 @@
       "hairtypeId": 3,
       "userId": 2,
       "id": 9
+    },
+    {
+      "styleName": "regrhrh",
+      "instructions": "fgrhth",
+      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
+      "videoUrl": "curly.com/videos",
+      "hairtypeId": 3,
+      "userId": 2,
+      "id": 10
+    },
+    {
+      "styleName": "regrhrh",
+      "instructions": "fgrhth",
+      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
+      "videoUrl": "curly.com/videos",
+      "hairtypeId": 3,
+      "userId": 2,
+      "id": 11
+    },
+    {
+      "styleName": "Pig Tails",
+      "instructions": "Braid em up like pig tails!",
+      "imgUrl": "461752240-H.jpg",
+      "videoUrl": "https://www.youtube.com",
+      "hairtypeId": 1,
+      "userId": 1,
+      "id": 12
+    },
+    {
+      "styleName": "Cool Braids",
+      "instructions": "Throw some cool colors in her hair.",
+      "imgUrl": "coolbraids.jpg",
+      "videoUrl": "www.youtube.com",
+      "hairtypeId": 4,
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "id": 14,
+      "styleName": "Shaved and cool",
+      "imgUrl": "unique.jpg",
+      "instructions": "Do something crazy!!!!!!!!!!!",
+      "videoUrl": "https://www.youtube.com",
+      "hairtypeId": 3,
+      "userId": 1
     }
   ]
 }

@@ -54,8 +54,19 @@ class HairStyleEditForm extends Component {
                 });
             });
 
-        ApiManager.getAll("hairstyles")
-            .then(hairstyles => this.setState({ hairstyles: hairstyles }))
+    //     ApiManager.getAll("hairstyles")
+    //         .then(hairtypes => {
+    //             console.log('hairtypes', hairtypes)
+    //             this.setState({ hairtypes: hairtypes })})
+    // }
+    // componentDidMount() {
+        //getAll from ApiManager and hang on to that data; put it in state
+        ApiManager.getAll('hairtypes')
+            .then((hairtypesArray) => {
+                this.setState({
+                    hairtypes: hairtypesArray
+                })
+            })
     }
 
     render() {

@@ -21,13 +21,13 @@ class HairStyleForm extends Component {
 
     componentDidMount() {
         //getAll from ApiManager and hang on to that data; put it in state
-        ApiManager.getAll('hairtypes')  
-          .then((hairtypesArray) => {
-            this.setState({
-              hairtypes: hairtypesArray
+        ApiManager.getAll('hairtypes')
+            .then((hairtypesArray) => {
+                this.setState({
+                    hairtypes: hairtypesArray
+                })
             })
-          })
-      }
+    }
 
     addNewHairStyle = event => {
         event.preventDefault();
@@ -40,22 +40,22 @@ class HairStyleForm extends Component {
                 // if (this.state.hairtypeId === "") {
                 //     window.alert("What hair type is this style for?")
                 // } else {
-                    this.setState({ loadingStatus: true })
-                    const hairstyle = {
-                        styleName: this.state.styleName,
-                        instructions: this.state.instructions,
-                        imgUrl: this.state.imgUrl,
-                        videoUrl: this.state.videoUrl,
-                        hairtypeId: parseInt(this.state.hairtypeId),
-                        userId: Number(localStorage.getItem("activeUser"))
-                    };
+                this.setState({ loadingStatus: true })
+                const hairstyle = {
+                    styleName: this.state.styleName,
+                    instructions: this.state.instructions,
+                    imgUrl: this.state.imgUrl,
+                    videoUrl: this.state.videoUrl,
+                    hairtypeId: parseInt(this.state.hairtypeId),
+                    userId: Number(localStorage.getItem("activeUser"))
+                };
 
-                    ApiManager.post(hairstyle)
-                        .then(() => this.props.history.push(`/hairstyles/${parseInt(this.state.hairtypeId)}`));
-                }
+                ApiManager.post(hairstyle)
+                    .then(() => this.props.history.push(`/hairstyles/${parseInt(this.state.hairtypeId)}`));
             }
         }
-    
+    }
+
 
 
 
@@ -104,12 +104,13 @@ class HairStyleForm extends Component {
                             /> <br></br><br></br>
 
                             <label htmlFor="hairtype-dropdown">Hair Type: </label>
-                            <select id="hairtypeId"
+                            <select
+                                id="hairtypeId"
                                 className="form-control"
-                                    value={this.state.hairtypeId}
+                                value={this.state.hairtypeId}
                                 onChange={this.inputFieldChange}
-                                >
-                                    <option value="">Select an Option</option>
+                            >
+                                <option value="">Select an Option</option>
                                 {this.state.hairtypes.map(hairtype =>
                                     <option id={hairtype.id} key={hairtype.id} value={hairtype.id}>
                                         {hairtype.title}

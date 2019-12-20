@@ -68,13 +68,13 @@
       "hairtypeId": 3
     },
     {
+      "id": 8,
       "styleName": "curly rose",
-      "instructions": "rrbrgrgr",
-      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
+      "imgUrl": "hair.jpg",
+      "instructions": "aaaaaaaaaabbbbbbbbbbbbb",
       "videoUrl": "curly.com/videos",
       "hairtypeId": 2,
-      "userId": 2,
-      "id": 8
+      "userId": 2
     },
     {
       "styleName": "regrhrh",

@@ -11,6 +11,7 @@ class HairStyleEditForm extends Component {
         instructions: "",
         videoUrl: "",
         hairtypeId: "",
+        hairtypes: [],
         loadingStatus: true
     };
 
@@ -29,16 +30,17 @@ class HairStyleEditForm extends Component {
             imgUrl: this.state.imgUrl,
             instructions: this.state.instructions,
             videoUrl: this.state.videoUrl,
-            hairtypeId: Number(this.state.hairtypeId),
-            userId: Number(localStorage.getItem("activeUser"))            
+            hairtypeId: parseInt(this.state.hairtypeId),
+            userId: Number(localStorage.getItem("activeUser"))
 
         };
 
         ApiManager.update(editedHairStyle)
-            .then(() => this.props.history.push(`/hairstyles/${(this.state.hairtypeId)}`))
+            .then(() => this.props.history.push(`/hairstyles/${parseInt(this.state.hairtypeId)}`))
     }
 
     componentDidMount() {
+        console.log(this.state)
         ApiManager.get("hairstyles", this.props.match.params.hairstyleId)
             .then(hairstyle => {
                 // debugger
@@ -70,30 +72,57 @@ class HairStyleEditForm extends Component {
                                 onChange={this.handleFieldChange}
                                 id="styleName"
                                 value={this.state.styleName}
-                            />
+                            /> <br></br><br></br>
 
-                            {/* <input
+                            <label htmlFor="image">Picture of Finished Style: </label>
+                            <input
                                 type="text"
                                 required
                                 className="form-control"
                                 onChange={this.handleFieldChange}
-                                id="breed"
-                                value={this.state.breed}
-                            />
-                            <label htmlFor="breed">Breed</label>
+                                id="imgUrl"
+                                value={this.state.imgUrl}
+                            /> <br></br><br></br>
 
+                            <label htmlFor="instructions">Instructions: </label>
+                            <textarea
+                                
+                                id="instructions"
+                                required
+                                onChange={this.handleFieldChange}
+                                cols="40"
+                                rows="5"
+                                placeholder="Guyd other dads on how to create this style."
+                                value={this.state.instructions}
+                            >
+                            </textarea> <br></br><br></br>
+
+                            <label htmlFor="videoUrl">Video Guyd: </label>
+                            <input
+                                type="text"
+                                id="videoUrl"
+                                required
+                                onChange={this.handleFieldChange}
+                                placeholder="Place video link here"
+                                value={this.state.videoUrl}
+                            /> 
+                            <br></br><br></br>
+
+                            <label htmlFor="hairtype-dropdown">Hair Type: </label>
                             <select
-                                className="form-control"
                                 id="hairtypeId"
+                                className="form-control"
                                 value={this.state.hairtypeId}
                                 onChange={this.handleFieldChange}
                             >
+                                <option>Select an Option</option>
                                 {this.state.hairtypes.map(hairtype =>
-                                    <option key={hairtype.id} value={hairtype.id}>
+                                    <option id={hairtype.id} key={hairtype.id} value={hairtype.id}>
                                         {hairtype.title}
                                     </option>
                                 )}
-                            </select> */}
+                            </select>
+
                         </div>
                         <div className="alignRight">
                             <button

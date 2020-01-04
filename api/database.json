@@ -50,24 +50,6 @@
   ],
   "hairstyles": [
     {
-      "id": 6,
-      "styleName": "test coily",
-      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "instructions": "do coily hair",
-      "videoUrl": "youtube.com",
-      "hairtypeId": 4,
-      "userId": 1
-    },
-    {
-      "id": 7,
-      "userId": 1,
-      "styleName": "charles test",
-      "instructions": "charles test",
-      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "videoUrl": "test.com",
-      "hairtypeId": 3
-    },
-    {
       "id": 8,
       "styleName": "curly rose",
       "imgUrl": "hair.jpg",
@@ -123,11 +105,11 @@
     },
     {
       "id": 14,
-      "styleName": "Shaved and cool",
+      "styleName": "Shaved and super cool",
       "imgUrl": "unique.jpg",
-      "instructions": "Do something crazy!!!!!!!!!!!",
+      "instructions": "Do something crazy!",
       "videoUrl": "https://www.youtube.com",
-      "hairtypeId": 3,
+      "hairtypeId": 1,
       "userId": 1
     }
   ]

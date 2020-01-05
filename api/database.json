@@ -59,13 +59,13 @@
       "userId": 2
     },
     {
-      "styleName": "regrhrh",
-      "instructions": "fgrhth",
+      "id": 9,
+      "styleName": "Belongs to different user",
       "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
+      "instructions": "fgrhth",
       "videoUrl": "curly.com/videos",
       "hairtypeId": 3,
-      "userId": 2,
-      "id": 9
+      "userId": 1
     },
     {
       "styleName": "regrhrh",

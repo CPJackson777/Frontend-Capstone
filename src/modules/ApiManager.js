@@ -49,8 +49,7 @@ export default {
     //***********************************************
 //    http://localhost:5002/hairstyles?hairtypeId=1
    getAllHairStylesForOneHairType(hairtypeId) {
-    console.log(hairtypeId)
-    return fetch(`${baseURL}/hairstyles?hairtypeId=${hairtypeId}&userId=${Number(localStorage.getItem("activeUser"))}`)
+    return fetch(`${baseURL}/hairstyles?hairtypeId=${hairtypeId}`)
         .then(result => result.json())
 },
 

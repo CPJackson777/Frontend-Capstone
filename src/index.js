@@ -4,7 +4,6 @@ import './index.css';
 import HairGuyd from './components/HairGuyd';
 import {BrowserRouter as Router} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
-import 'bulma/css/bulma.css'
 
 ReactDOM.render(<Router><HairGuyd /></Router>, document.getElementById('root'));
 

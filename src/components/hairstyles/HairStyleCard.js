@@ -6,6 +6,9 @@ class HairStyleCard extends Component {
 
 
     render() {
+        console.log("userId", this.props.hairstyle.userId)
+        console.log("localstorage", Number(localStorage.getItem("activeUser")))        
+
         return (
             <div className="card">
                 <div className="card-content">
@@ -15,12 +18,12 @@ class HairStyleCard extends Component {
                     </picture>
                     <p>Instructions: <span>{this.props.hairstyle.instructions}</span></p>
                     <div>
-                        <a href={this.props.hairstyle.videoUrl} target="_blank" rel="noopener noreferrer">Watch Tutorial:</a>
-                        {/* <iframe width="560" height="315" src={this.props.hairstyle.videoUrl} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+                        {/* <a href={this.props.hairstyle.videoUrl} target="_blank" rel="noopener noreferrer">Watch Tutorial:</a> */}
+                        <iframe width="560" height="315" src={this.props.hairstyle.videoUrl} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
 
                     {
-                        (this.props.hairstyle.userId) === (localStorage.id)
+                        (this.props.hairstyle.userId) === Number(localStorage.getItem("activeUser"))
                             ?
                             <>
                             <button

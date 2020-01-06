@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ApplicationViews from "./ApplicationViews";
 import HairGuydNavBar from './nav/HairGuydNavBar'
 import './hairguyd.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class HairGuyd extends Component {

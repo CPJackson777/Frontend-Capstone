@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom"
 import './NavBar.css'
 
-class NavBar extends Component {
+
+class HairGuydNavBar extends Component {
 
   handleLogout = () => {
     this.props.clearUser();
@@ -13,10 +14,10 @@ class NavBar extends Component {
 
     return (
       <header>
-        <h1 className="navbar">Hair Guy'd<br />
+        <h1 className="header">Hair Guy'd<br />
           <small>Dads guyding other dads on doing their daughter's hair.</small>
         </h1>
-        <nav>
+        <nav className="navbar" role="navigation" aria-label="main navigation">
           <ul className="container">
             {
             (this.props.isLoggedIn)
@@ -38,4 +39,4 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+export default HairGuydNavBar;

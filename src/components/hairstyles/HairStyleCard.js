@@ -27,6 +27,7 @@ class HairStyleCard extends Component {
                             ?
                             <>
                             <button
+                                className="button is-info is-rounded"
                                 type="button"
                                 onClick={() => { this.props.history.push(`/hairstyles/${this.props.hairstyle.id}/edit`) }}>
                                 Edit

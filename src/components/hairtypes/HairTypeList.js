@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 //import the components we will need
 import HairTypeCard from './HairTypeCard'
 import ApiManager from '../../modules/ApiManager'
+import "./HairTypes.css"
 
 
 class HairTypeList extends Component {

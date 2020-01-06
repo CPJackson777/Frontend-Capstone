@@ -12,7 +12,6 @@ class HairStyleList extends Component {
     
     ApiManager.getAllHairStylesForOneHairType(this.props.match.params.hairtypeId)
       .then((hairstylesArray) => {
-          console.log(hairstylesArray)
         this.setState({
           hairstyles: hairstylesArray,
           hairtypeId: this.props.match.params.hairtypeId

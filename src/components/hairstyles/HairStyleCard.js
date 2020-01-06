@@ -15,7 +15,8 @@ class HairStyleCard extends Component {
                     </picture>
                     <p>Instructions: <span>{this.props.hairstyle.instructions}</span></p>
                     <div>
-                        <a href={this.props.hairstyle.videoUrl}>Watch Tutorial:</a>
+                        {/* <a href={this.props.hairstyle.videoUrl} target="_blank">Watch Tutorial:</a> */}
+                        <iframe width="560" height="315" src={this.props.hairstyle.videoUrl} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
 
                     {

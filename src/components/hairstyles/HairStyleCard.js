@@ -6,8 +6,8 @@ class HairStyleCard extends Component {
 
 
     render() {
-        console.log("userId", this.props.hairstyle.userId)
-        console.log("localstorage", Number(localStorage.getItem("activeUser")))        
+        // console.log("userId", this.props.hairstyle.userId)
+        // console.log("localstorage", Number(localStorage.getItem("activeUser")))        
 
         return (
             <div className="card">

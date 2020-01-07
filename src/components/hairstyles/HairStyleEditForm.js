@@ -40,7 +40,7 @@ class HairStyleEditForm extends Component {
     }
 
     componentDidMount() {
-        console.log(this.state)
+        // console.log(this.state)
         ApiManager.get("hairstyles", this.props.match.params.hairstyleId)
             .then(hairstyle => {
                 // debugger

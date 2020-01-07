@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from "react-router-dom";
+import './hairstylecard.css'
 
 
 class HairStyleCard extends Component {
@@ -10,11 +10,12 @@ class HairStyleCard extends Component {
         // console.log("localstorage", Number(localStorage.getItem("activeUser")))        
 
         return (
-            <div className="card">
+            <section className="section">
+            <div className="container">
                 <div className="card-content">
                     <h3>Style: <span className="card-stylename">{this.props.hairstyle.styleName}</span></h3>
                     <picture>
-                        <img src={require(`./${this.props.hairstyle.imgUrl}`)} alt="Hair Style" />
+                        <img src={require(`./${this.props.hairstyle.imgUrl}`)} alt="Hair Style" width="256" height="256"/>
                     </picture>
                     <p>Instructions: <span>{this.props.hairstyle.instructions}</span></p>
                     <div>
@@ -32,7 +33,9 @@ class HairStyleCard extends Component {
                                 onClick={() => { this.props.history.push(`/hairstyles/${this.props.hairstyle.id}/edit`) }}>
                                 Edit
                             </button>
-                             <button type="button"
+                             <button 
+                             className="button is-danger is-rounded"
+                             type="button"
                                 onClick={() => this.props.deleteHairStyle(this.props.hairstyle.id)}>
                                 Delete
                             </button>
@@ -41,6 +44,7 @@ class HairStyleCard extends Component {
                     }
                 </div>
             </div>
+            </section>
         );
     }
 }

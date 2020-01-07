@@ -67,72 +67,96 @@ class HairStyleEditForm extends Component {
             <>
                 <form>
                     <fieldset>
-                        <div className="formgrid">
-                            <label htmlFor="styleName">Hair Style Name: </label>
-                            <input
-                                type="text"
-                                required
-                                className="form-control"
-                                onChange={this.handleFieldChange}
-                                id="styleName"
-                                value={this.state.styleName}
-                            /> <br></br><br></br>
 
-                            <label htmlFor="image">Picture of Finished Style: </label>
-                            <input
-                                type="text"
-                                required
-                                className="form-control"
-                                onChange={this.handleFieldChange}
-                                id="imgUrl"
-                                value={this.state.imgUrl}
-                            /> <br></br><br></br>
+                        <div className="field">
+                            <label className="label">Hair Style Name:</label>
+                            <div className="control">
+                                <input
+                                    className="input is-link"
+                                    type="text"
+                                    required
+                                    className="form-control"
+                                    onChange={this.handleFieldChange}
+                                    id="styleName"
+                                    value={this.state.styleName}
+                                />
+                            </div>
+                        </div>
 
-                            <label htmlFor="instructions">Instructions: </label>
-                            <textarea
-                                
-                                id="instructions"
-                                required
-                                onChange={this.handleFieldChange}
-                                cols="40"
-                                rows="5"
-                                placeholder="Guyd other dads on how to create this style."
-                                value={this.state.instructions}
-                            >
-                            </textarea> <br></br><br></br>
+                        <div className="field">
+                            <label className="label">Picture of Finished Style:</label>
+                            <div className="control">
+                                <input
+                                    className="input is-link"
+                                    type="text"
+                                    required
+                                    className="form-control"
+                                    onChange={this.handleFieldChange}
+                                    id="imgUrl"
+                                    value={this.state.imgUrl}
+                                />
+                            </div>
+                        </div>
 
-                            <label htmlFor="videoUrl">Video Guyd: </label>
-                            <input
-                                type="text"
-                                id="videoUrl"
-                                required
-                                onChange={this.handleFieldChange}
-                                placeholder="Place video link here"
-                                value={this.state.videoUrl}
-                            /> 
-                            <br></br><br></br>
+                        <div className="field">
+                            <label className="label">Instructions:</label>
+                            <div className="control">
+                                <textarea
+                                    className="textarea is-link"
+                                    id="instructions"
+                                    required
+                                    onChange={this.handleFieldChange}
+                                    cols="40"
+                                    rows="5"
+                                    placeholder="Guyd other dads on how to create this style."
+                                    value={this.state.instructions}
+                                >
+                                </textarea>
+                            </div>
+                        </div>
 
-                            <label htmlFor="hairtype-dropdown">Hair Type: </label>
-                            <select
-                                id="hairtypeId"
-                                className="form-control"
-                                value={this.state.hairtypeId}
-                                onChange={this.handleFieldChange}
-                            >
-                                <option>Select an Option</option>
-                                {this.state.hairtypes.map(hairtype =>
-                                    <option id={hairtype.id} key={hairtype.id} value={hairtype.id}>
-                                        {hairtype.title}
-                                    </option>
-                                )}
-                            </select>
+                        <div className="field">
+                            <label className="label">Video Guyd:</label>
+                            <div className="control">
+                                <input
+                                    className="input is-link"
+                                    type="text"
+                                    id="videoUrl"
+                                    required
+                                    onChange={this.handleFieldChange}
+                                    placeholder="Place video link here"
+                                    value={this.state.videoUrl}
+                                />
+                            </div>
+                        </div>
+
+                        <div className="field">
+                            <label className="label">Hair Type:</label>
+                            <div className="control">
+                                <div className="select is-link">
+                                    <select
+                                        id="hairtypeId"
+                                        className="form-control"
+                                        value={this.state.hairtypeId}
+                                        onChange={this.handleFieldChange}
+                                    >
+                                        <option>Select an Option</option>
+                                        {this.state.hairtypes.map(hairtype =>
+                                            <option id={hairtype.id} key={hairtype.id} value={hairtype.id}>
+                                                {hairtype.title}
+                                            </option>
+                                        )}
+                                    </select>
+                                </div>
+                            </div>
+
 
                         </div>
                         <div className="alignRight">
                             <button
                                 type="button" disabled={this.state.loadingStatus}
                                 onClick={this.updateExistingHairStyle}
-                                className="btn btn-primary"
+                                className="button is-link"
                             >Submit</button>
                         </div>
                     </fieldset>

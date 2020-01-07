@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import HairStyleCard from './HairStyleCard'
 import ApiManager from '../../modules/ApiManager'
+import './hairstylelist.css'
 
 class HairStyleList extends Component {
   //define what this component needs to render
@@ -47,13 +48,15 @@ class HairStyleList extends Component {
     return (
       <React.Fragment>
         <section className="section-content">
+          <div className="container">
           <button type="button"
-            className="btn"
+            className="button is-link is-medium is-fullwidth" 
             onClick={() => { this.props.history.push("/hairstyles/new") }}>
             Add Hair Style
           </button>
+          </div>
         </section>
-        <div className="container-cards">
+        <div className="list-container-cards">
           {this.state.hairstyles.map(hairstyle =>
             <HairStyleCard
               key={hairstyle.id}

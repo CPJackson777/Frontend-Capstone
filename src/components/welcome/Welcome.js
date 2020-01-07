@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import HairGuydLogoLarge from './HairGuydLogoLarge.png';
-// import Combs from './Combs.jpg'
 import './Welcome.css'
 import { ButtonGroup } from 'react-bootstrap';
 
@@ -10,7 +9,6 @@ class Welcome extends Component {
         return (
             <>
                 <div id="welcomeBackground" >
-                {/* <img className="bg-image" src={Combs}></img> */}
                     
                     <img className="welcome-logo" src={HairGuydLogoLarge}></img>
                     

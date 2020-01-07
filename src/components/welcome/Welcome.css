@@ -1,5 +1,10 @@
 .welcome-logo {
     display: block;
+    width: 30%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.auth-button {
+    text-align:center
 }

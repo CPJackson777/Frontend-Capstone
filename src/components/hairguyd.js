@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ApplicationViews from "./ApplicationViews";
-import NavBar from './nav/NavBar'
+import HairGuydNavBar from './nav/HairGuydNavBar'
+import './hairguyd.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class HairGuyd extends Component {
@@ -47,7 +49,7 @@ componentDidMount(){
   render() {
     return (
       <>
-      <NavBar isLoggedIn={this.state.isLoggedIn} clearUser={this.clearUser} />
+      <HairGuydNavBar isLoggedIn={this.state.isLoggedIn} clearUser={this.clearUser} />
       <ApplicationViews isAuthenticated={this.isAuthenticated}
                         setUser={this.setUser} />
       </>

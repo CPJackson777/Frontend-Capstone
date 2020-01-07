@@ -39,7 +39,7 @@
       "id": 3,
       "title": "Curly",
       "description": "Type 3 hair that ranges from bouncy ringlets (spiral like curls of hair) to tight corkscrews (spiral-shaped corkscrew curls).",
-      "img": "curly1.jpg"
+      "img": "curly2.jpg"
     },
     {
       "id": 4,
@@ -51,65 +51,56 @@
   "hairstyles": [
     {
       "id": 8,
-      "styleName": "curly rose",
+      "styleName": "Curly with a Bow",
       "imgUrl": "hair.jpg",
-      "instructions": "aaaaaaaaaabbbbbbbbbbbbb",
-      "videoUrl": "curly.com/videos",
+      "instructions": "Step 1: Using a tail comb, create a front section of hair all the way around your head from ear to ear. Clip back the rest of your hair to keep it out of the way for now.\n\nStep 2: Beginning at one side of your head, French-braid the front section of hair along the hairline.\n\nStep 3: Continue the French braid, adding more hair to each strand as you go.\n\nStep 4: Once the braid is at your ear, continue with a traditional three-strand braid to the end of the hair.\n\nStep 5: Secure the braid with a mini hair elastic at the bottom.",
+      "videoUrl": "https://www.youtube.com/embed/aYY5D-vrcmk",
+      "hairtypeId": 3,
+      "userId": 1
+    },
+    {
+      "id": 12,
+      "styleName": "Pig Tails",
+      "imgUrl": "461752240-H.jpg",
+      "instructions": "Part your hair down the middle of your entire head.\nYour hair is now in 2 sections. Tie one side up with one of your hair-binders.\nStart at the crown of your head and grab a small chunk of hair. Separate it into 3 equal parts and perform a braid.\nThen, “grab and grab” as I like to say. Add on to your braid on both sides by picking up another little chunk of hair and then performing another braid.\nRepeat step 4 all the way down your head.",
+      "videoUrl": "https://www.youtube.com/embed/vACzWlr3cLY",
+      "hairtypeId": 1,
+      "userId": 1
+    },
+    {
+      "id": 13,
+      "styleName": "Simple Puffs",
+      "imgUrl": "coilypic2.jpg",
+      "instructions": "To make puffs, start with parting the hair down the middle and making 2 equally sized puffs. Then, grab the tip of your hair and start twisting it until your hair is twisted from the ends to the base. Take your hair and wrap it around the base of your ponytail in a spiral, then secure your bun with bobby pins or rubber bands.\nGel is your friend to slick down edges.",
+      "videoUrl": "https://www.youtube.com/embed/DDRKX9XFFS0",
       "hairtypeId": 4,
+      "userId": 1
+    },
+    {
+      "id": 9,
+      "styleName": "Dutch Braid",
+      "imgUrl": "straightpic2.jpg",
+      "instructions": "Step 1 - Detangle hair & create distinct sections. ...\nStep 2: Begin the braid by crossing the right strand under the middle strand. ...\nStep 3: Cross the left strand under the middle strand. ...\nStep 4: Keep braiding all the way down. ...\nStep 5: Secure with a hairband & hairspray.",
+      "videoUrl": "https://www.youtube.com/embed/jq2uxQoKr88",
+      "hairtypeId": 1,
+      "userId": 1
+    },
+    {
+      "id": 15,
+      "styleName": "Bun",
+      "imgUrl": "straightpic1.jpg",
+      "instructions": "To make a quick, easy bun, start with your hair in a ponytail. Then, grab the tip of your hair and start twisting it until your hair is twisted from the ends to the base. Take your hair and wrap it around the base of your ponytail in a spiral, then secure your bun with bobby pins.",
+      "videoUrl": "https://www.youtube.com/embed/UXhslfACJtc?start=61",
+      "hairtypeId": 1,
       "userId": 2
     },
     {
-      "styleName": "regrhrh",
-      "instructions": "fgrhth",
-      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "videoUrl": "curly.com/videos",
+      "id": 16,
+      "styleName": "Stylish Braids (advanced)",
+      "imgUrl": "curlypic4.jpg",
+      "instructions": "Step 1: Take a one-inch section of hair from each side of your head and gather them together in the back, loosely securing them with a mini hair elastic. This section will act as an anchor for Steps 2–4. Underneath that section, gather the top half of your hair into a half-up ponytail.\n\nStep 2: Beginning on the right side of your head, take a one-inch section of hair and roll it up, over the top anchor of hair, and tuck it underneath the anchor. Secure it with a bobby pin.\n\nStep 3: Repeat Step 2 with another one-inch section of hair, continuing until all of your hair is secured up.\n\nStep 4: Use bobby pins to tuck away any stray hairs or cowlicks.",
+      "videoUrl": "https://www.youtube.com/embed/DC0LNSZ2oAM?start=1",
       "hairtypeId": 3,
-      "userId": 2,
-      "id": 9
-    },
-    {
-      "styleName": "regrhrh",
-      "instructions": "fgrhth",
-      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "videoUrl": "curly.com/videos",
-      "hairtypeId": 3,
-      "userId": 2,
-      "id": 10
-    },
-    {
-      "styleName": "regrhrh",
-      "instructions": "fgrhth",
-      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
-      "videoUrl": "curly.com/videos",
-      "hairtypeId": 3,
-      "userId": 2,
-      "id": 11
-    },
-    {
-      "styleName": "Pig Tails",
-      "instructions": "Braid em up like pig tails!",
-      "imgUrl": "461752240-H.jpg",
-      "videoUrl": "https://www.youtube.com",
-      "hairtypeId": 1,
-      "userId": 1,
-      "id": 12
-    },
-    {
-      "styleName": "Cool Braids",
-      "instructions": "Throw some cool colors in her hair.",
-      "imgUrl": "coolbraids.jpg",
-      "videoUrl": "www.youtube.com",
-      "hairtypeId": 4,
-      "userId": 1,
-      "id": 13
-    },
-    {
-      "id": 14,
-      "styleName": "Shaved and super cool",
-      "imgUrl": "unique.jpg",
-      "instructions": "Do something crazy!",
-      "videoUrl": "https://www.youtube.com",
-      "hairtypeId": 1,
       "userId": 1
     }
   ]

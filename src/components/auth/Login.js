@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ApiManager from '../../modules/ApiManager'
+import './login.css'
 
 class Login extends Component {
 
@@ -39,35 +40,54 @@ class Login extends Component {
     //***************************************************************************************************
     render() {
         return (
-            <div className="login-form">
+            <div className="container">
                 <form>
                     <div>
                         <fieldset>
                             <h3>User Login</h3>
-                            <div className="formgrid">
-                                <label htmlFor="emailInput">Email: </label>
-                                <input onChange={this.handleFieldChange} type="email"
-                                    id="email"
-                                    placeholder="Email address"
-                                    required="" autoFocus="" />
 
-                                <label htmlFor="passwordInput">Password: </label>
-                                <input onChange={this.handleFieldChange} type="password"
-                                    id="password"
-                                    placeholder="Password"
-                                    required="" />
-                            </div>
-                            <button onClick={this.handleLoginSubmit} type="submit">
-                                Enter
+                            <div>
+                                <div className="field">
+                                    <label className="label">Email</label>
+                                    <div className="control has-icons-left has-icons-right">
+                                        <input className="input is-dark" onChange={this.handleFieldChange} type="email"
+                                            id="email"
+                                            placeholder="Email address"
+                                            required="" autoFocus="" />
+                                        <span className="icon is-small is-left">
+                                            <i className="fas fa-envelope"></i>
+                                        </span>
+                                        {/* <span className="icon is-small is-right">
+                                            <i className="fas fa-exclamation-triangle"></i>
+                                        </span> */}
+                                    </div>
+                                    <br></br>
+                                    <div className="field">
+                                        <p className="control has-icons-left">
+                                            <input className="input is-dark" onChange={this.handleFieldChange} type="password"
+                                                id="password"
+                                                placeholder="Password"
+                                                required="" />
+                                            <span className="icon is-small is-left">
+                                                <i className="fas fa-lock"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button className="button is-info" onClick={this.handleLoginSubmit} type="submit">
+                                    Enter
                             </button>
+                            </div>
                         </fieldset>
-                    </div>
-                </form>
+                                </div>
+                </form >
+            
             </div>
-        )
-    }
-
-
-}
-
+                )
+            }
+        
+        
+        }
+        
 export default Login;

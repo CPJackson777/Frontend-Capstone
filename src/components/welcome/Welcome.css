@@ -1,0 +1,29 @@
+.welcome-logo {
+    display: block;
+    width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auth-button {
+    text-align:center
+}
+
+body {
+  /* The image used */
+  background-image: url("Combs.jpg");
+
+   /* Set rules to fill background */
+   min-height: 100%;
+   min-width: 1024px;
+     
+   /* Set up proportionate scaling */
+   width: 100%;
+   height: auto;
+     
+   /* Set up positioning */
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+

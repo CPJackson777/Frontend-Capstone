@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ApiManager from '../../modules/ApiManager'
+import './hairstyleform.css'
 
 class HairStyleForm extends Component {
     state = {
@@ -62,78 +63,107 @@ class HairStyleForm extends Component {
     render() {
         return (
             <>
+            <div className="container">
                 <form>
                     <fieldset>
-                        <div className="formgrid">
-                            <label htmlFor="styleName">Hair Style Name: </label>
-                            <input
-                                type="text"
-                                id="styleName"
-                                required
-                                onChange={this.inputFieldChange}
-                                placeholder="Hair Style Name"
-                            /> <br></br><br></br>
 
-                            <label htmlFor="image">Picture of Finished Style: </label>
-                            <input
-                                type="text"
-                                id="imgUrl"
-                                required
-                                onChange={this.inputFieldChange}
-                                placeholder="Place image link here"
-                            /> <br></br><br></br>
-
-                            <label htmlFor="instructions">Instructions: </label>
-                            <textarea
-                                id="instructions"
-                                required
-                                onChange={this.inputFieldChange}
-                                cols="40"
-                                rows="5"
-                                placeholder="Guyd other dads on how to create this style."
-                            >
-                            </textarea> <br></br><br></br>
-
-                            <label htmlFor="videoUrl">Video Guyd:</label>
-                            <input
-                                type="text"
-                                id="videoUrl"
-                                required
-                                onChange={this.inputFieldChange}
-                                placeholder="Place video link here"
-                            /> <br></br><br></br>
-
-                            <label htmlFor="hairtype-dropdown">Hair Type: </label>
-                            <select
-                                id="hairtypeId"
-                                className="form-control"
-                                value={this.state.hairtypeId}
-                                onChange={this.inputFieldChange}
-                            >
-                                <option value="">Select an Option</option>
-                                {this.state.hairtypes.map(hairtype =>
-                                    <option id={hairtype.id} key={hairtype.id} value={hairtype.id}>
-                                        {hairtype.title}
-                                    </option>
-                                )}
-                            </select>
-
+                        <div className="field">
+                            <label className="label">Hair Style Name:</label>
+                            <div className="control">
+                                <input
+                                    className="input is-link"
+                                    type="text"
+                                    id="styleName"
+                                    required
+                                    onChange={this.inputFieldChange}
+                                    placeholder="Hair Style Name"
+                                />
+                            </div>
                         </div>
-                        <div className="alignRight">
-                            <button
-                                type="button"
-                                disabled={this.state.loadingStatus}
-                                onClick={this.addNewHairStyle}
-                            >Submit</button>
+
+                        <div className="field">
+                            <label className="label">Picture of Finished Style:</label>
+                            <div className="control">
+                                <input
+                                    className="input is-link"
+                                    type="text"
+                                    id="imgUrl"
+                                    required
+                                    onChange={this.inputFieldChange}
+                                    placeholder="Place image link here"
+                                />
+                            </div>
                         </div>
+
+                        <div className="field">
+                            <label className="label">Instructions:</label>
+                            <div className="control">
+                                <textarea
+                                    className="textarea is-link"
+                                    id="instructions"
+                                    required
+                                    onChange={this.inputFieldChange}
+                                    cols="40"
+                                    rows="5"
+                                    placeholder="Guyd other dads on how to create this style."
+                                >
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div className="field">
+                            <label className="label">Video Guyd:</label>
+                            <div className="control">
+                                <input
+                                className="input is-link"
+                                    type="text"
+                                    id="videoUrl"
+                                    required
+                                    onChange={this.inputFieldChange}
+                                    placeholder="Place video link here"
+                                /> 
+                                 </div>
+                        </div>
+
+                        <div className="field">
+                            <label className="label">Hair Type:</label>
+                            <div className="control">
+                            <div className="select is-link">
+                                <select
+                                    id="hairtypeId"
+                                    
+                                    value={this.state.hairtypeId}
+                                    onChange={this.inputFieldChange}
+                                >
+                                    <option value="">Select an Option</option>
+                                    {this.state.hairtypes.map(hairtype =>
+                                        <option id={hairtype.id} key={hairtype.id} value={hairtype.id}>
+                                            {hairtype.title}
+                                        </option>
+                                    )}
+                                </select>
+                                 </div>
+                                 </div>
+                        </div>
+
+                            
+                            <div className="alignRight">
+                                <button
+                                className="button is-link"
+                                    type="button"
+                                    disabled={this.state.loadingStatus}
+                                    onClick={this.addNewHairStyle}
+                                >Submit</button>
+                            </div>
                     </fieldset>
                 </form>
+                </div>
             </>
 
-        );
-    }
-}
-
-
-
+                );
+            }
+        }
+        
+        
+        
 export default HairStyleForm;

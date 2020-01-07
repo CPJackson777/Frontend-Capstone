@@ -111,6 +111,15 @@
       "videoUrl": "https://www.youtube.com/embed/hw5WnS92EJk",
       "hairtypeId": 1,
       "userId": 2
+    },
+    {
+      "id": 15,
+      "styleName": "add",
+      "imgUrl": "5f122103d63ccff1901496f69d801665.jpg",
+      "instructions": "add",
+      "videoUrl": "https://www.youtube.com/embed/L6YcC1bk-sc",
+      "hairtypeId": 2,
+      "userId": 1
     }
   ]
 }

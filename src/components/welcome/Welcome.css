@@ -11,7 +11,7 @@
 
 body {
   /* The image used */
-  /* background-image: url("Combs.jpg"); */
+  background-image: url("Combs.jpg");
 
    /* Set rules to fill background */
    min-height: 100%;

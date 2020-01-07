@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import vet1 from './vet1.png';
+import './Welcome.css'
 
 class Welcome extends Component {
     render() {
@@ -7,21 +9,20 @@ class Welcome extends Component {
             <>
                 <div id="welcomeBackground" >
 
+                    
+                    <img className="welcome-logo" src={vet1}></img>
+                    
+                    <div id="signUpButton">
+                        <Link to={`/signup`}><button>Sign Up</button></Link>
+                    </div>
+                    <div id="loginButton">
+                        <Link to={`/login`}><button>Login</button></Link>
+                    </div>
 
-                    <figure className="image is-128x128">
-                        <img src="HairGuydLogoLarge.png"/>
-                    </figure>
-                        <div id="signUpButton">
-                            <Link to={`/signup`}><button>Sign Up</button></Link>
-                        </div>
-                        <div id="loginButton">
-                            <Link to={`/login`}><button>Login</button></Link>
-                        </div>
-
-            </div>
+                </div>
             </>
-                );
-            }
-        }
-        
+        );
+    }
+}
+
 export default Welcome;

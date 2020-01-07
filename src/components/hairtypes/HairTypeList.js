@@ -28,9 +28,11 @@ class HairTypeList extends Component {
       <React.Fragment>
            <div id="homeBackground" >
             </div>
-            <div>
+            <section className="section">
                 <h1 id="welcomeHomePageHeader">Choose Your Daughter's Hair Type</h1>
-            </div>
+            </section>
+            
+            <div className="container">
         <div className="container-cards">
           {this.state.hairtypes.map(hairtype =>
             <HairTypeCard
@@ -39,6 +41,7 @@ class HairTypeList extends Component {
               {...this.props}
             />
           )}
+        </div>
         </div>
       </React.Fragment>
     )

@@ -31,9 +31,9 @@ class HairGuydNavBar extends Component {
 
 
         <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a class="navbar-item">
-              <img src={navlogo} width="" height=""/>
+          <div className="navbar-brand">
+            <a className="navbar-item">
+              <img src={navlogo}/>
           </a>
           </div>
               <ul className="container">

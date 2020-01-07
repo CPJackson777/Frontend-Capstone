@@ -1,7 +1,12 @@
-/* .container-cards {
-    display: flex;
-  flex-flow: column wrap;
-  height: 100%;
-    background-color: ;
+.container-cards {
+  display: flex;
+  align-content: center;
+  /* flex-wrap: wrap; */
+  
+  
     
-} */
+}
+
+#welcomeHomePageHeader {
+  text-align: center;
+}

@@ -1,7 +1,12 @@
 .card {
-    width: 50%;
-    margin: auto;
-    $card-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02);
+    width: 35%;
+    display: flex;
+    flex: 0 1 35%;
+    margin-bottom: 2em;
+    margin-right: 2em;
+      
+
+    
     
 
 }

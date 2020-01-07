@@ -13,11 +13,11 @@ class HairStyleCard extends Component {
             <section className="section">
             <div className="container">
                 <div className="card-content">
-                    <h3>Style: <span className="card-stylename">{this.props.hairstyle.styleName}</span></h3>
+                    <h3 className="instructions">Style: <span className="card-stylename">{this.props.hairstyle.styleName}</span></h3>
                     <picture>
                         <img src={require(`./${this.props.hairstyle.imgUrl}`)} alt="Hair Style" width="256" height="256"/>
                     </picture>
-                    <p>Instructions: <span>{this.props.hairstyle.instructions}</span></p>
+                    <p className="instructions">Instructions: <span>{this.props.hairstyle.instructions}</span></p>
                     <div>
                         {/* <a href={this.props.hairstyle.videoUrl} target="_blank" rel="noopener noreferrer">Watch Tutorial:</a> */}
                         <iframe width="560" height="315" src={this.props.hairstyle.videoUrl} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

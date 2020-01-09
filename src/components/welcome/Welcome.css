@@ -22,7 +22,7 @@ body {
    height: auto;
      
    /* Set up positioning */
-   position: absolute;
+   background-attachment: fixed;
    background-repeat: no-repeat;
    background-position: center;
    top: 0;

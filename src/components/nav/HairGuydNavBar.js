@@ -36,16 +36,16 @@ class HairGuydNavBar extends Component {
               <img src={navlogo}/>
           </a>
           </div>
-              <ul className="container">
-                {
-                  (this.props.isLoggedIn)
-                    ?
-                    <>
+                      <ul className="container">
                       <li><Link className="nav-link" to="/hairtypes">Hair Types</Link></li>
                       <li><Link className="nav-link" to="/hairstyles/1">Straight Hair</Link></li>
                       <li><Link className="nav-link" to="/hairstyles/2">Wavy Hair</Link></li>
                       <li><Link className="nav-link" to="/hairstyles/3">Curly Hair</Link></li>
                       <li><Link className="nav-link" to="/hairstyles/4">Coily</Link></li>
+                {
+                  (this.props.isLoggedIn)
+                    ?
+                    <>
                       <li><span className="nav-link" onClick={this.handleLogout}>Logout</span></li>
                     </>
                     : null

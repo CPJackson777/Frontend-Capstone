@@ -1,7 +1,10 @@
 .list-container-cards {
     display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   height: 100%;
+  flex-direction: column;
+  justify-content: center;
+
   
 
 }

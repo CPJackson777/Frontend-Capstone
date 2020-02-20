@@ -9,4 +9,6 @@
 
 #welcomeHomePageHeader {
   text-align: center;
+  border: white solid 1px;
+  background-color: white;
 }

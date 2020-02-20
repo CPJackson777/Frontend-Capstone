@@ -22,7 +22,7 @@ class HairTypeCard extends Component {
 
 
           <div className="card-content" className="section">
-            <div className="content"></div>
+            <div className="description-content"></div>
             Description: {this.props.hairtype.description}
           </div>
         
